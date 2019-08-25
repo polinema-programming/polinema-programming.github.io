@@ -158,4 +158,4 @@
 Buatlah program Java sederhana dengan hasil output sebagai berikut, kemudian
 jalankan program yang telah anda buat!
 
-
+![Biodata](./images/biodata.png)
