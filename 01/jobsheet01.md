@@ -19,7 +19,7 @@ Di bawah ini adalah arsitektur bahasa pemrograman java
 
 ![Biodata](./images/jdk-jre-jvm.jpeg)
 
-[sumber](https://medium.com/@mannverma/the-secret-of-java-jdk-jre-jvm-difference-fa35201650ca)
+[sumber: https://medium.com/](https://medium.com/@mannverma/the-secret-of-java-jdk-jre-jvm-difference-fa35201650ca)
 
 Pada gambar di atas terdapat Java Virtual Machine, merupakan sebuah mesin virtual yang terdapat di dalam sebuah JRE untuk menjalankan file .class.
 
