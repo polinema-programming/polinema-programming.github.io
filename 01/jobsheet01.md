@@ -7,6 +7,22 @@
 - Mahasiswa memahami struktur dasar bahasa pemrograman Java
 - Mahasiswa mampu melakukan proses compile dan debug
 
+## Teori Singkat
+
+Java merupakan sebuah bahasa pemrograman yang multiplatform, dapat berjalan di sistem operasi windows, linux, ataupun mac OS. Dengan model aplikasi desktop, web, mobile, serta model aplikasi yang berjalan pada micro processor(Applet).
+Untuk membuat sebuah program menggunakan bahasa pemrograman java dibutuhkan 2 komponen utama yaitu Java Development Kit(JDK) dan Java Runtime Environment(JRE). 
+
+1. JDK digunakan untuk membuat aplikasi java
+2. JRE digunakan menjalankan aplikasi yang telah kita buat.
+
+Di bawah ini adalah arsitektur bahasa pemrograman java
+
+![Biodata](./images/jdk-jre-jvm.jpeg)
+
+[sumber](https://medium.com/@mannverma/the-secret-of-java-jdk-jre-jvm-difference-fa35201650ca)
+
+Pada gambar di atas terdapat Java Virtual Machine, merupakan sebuah mesin virtual yang terdapat di dalam sebuah JRE untuk menjalankan file .class.
+
 ## Praktikum
 
 ### Percobaan 1: Melakukan Instalasi Java Development Kit/JDK
@@ -68,6 +84,17 @@
   > - `void` menandakan sebuah method tidak mempunyai *return value* (nilai
   >  kembalian).
   > - Penamaan `class` dengan nama file harus sama persis (case sensitive).
+
+  ```java
+  public static void main(String[] args){
+  }
+  ```
+
+   Potongan kode di atas merupakan sebuah pintu masuk compiler untuk melakukan compile kode java, compile adalah proses mengubah kode java(*.java) menjadi 
+   bahasa mesin atau byte kode yang tidak bisa dibaca dengan editor biasa. Dalam sebuah file java hanya diizinkan memiliki 1 potongan kode diatas.
+
+   > **Catatan**: case sensitive maksudnya adalah java memperlakukan antara huruf besar dan huruf kecil berbeda.
+   >contohnya; makan, Makan, dan MakaN adalah berbeda.
 
 4. Simpan kode program tersebut (File->Save)
 5. Buka Command Prompt dan masuk ke lokasi folder dimana file `Latihan.java`
