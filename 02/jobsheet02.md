@@ -88,31 +88,51 @@ Algoritma dinilai dari hasil yang benar sesuai keinginan, menghasilkan output ya
     * Jika kondisi hujan, gabrielle akan memakai payung dari daun dan jalan kaki untuk pergi ke sekolah. Jika cerah, bersepeda adalah cara yang dipilih untuk pergi ke sekolah
     * Tahap yang terakhir, sesampai di depan sekolah gabrielle bergegas masuk ke gedung sekolah
 
-2. Selesaikan permasalahan tesebut dengan langkah-langkah logis sesuai dengan ulasan teori yang sudah dijelaskan sebelumnya.
+2.  Seekor katak berolahraga dengan melompat-lompat di sekitar kolam. Katak tersebut melompat dari lily pad ke lily pad yang lain sesuai dengan urutan yang ditunjukkan pada gambar 2 berikut ini.
 
-    “Bu Asil adalah salah satu nasabah bank YYY yang menabung sebesar 10 juta rupiah. Bank tersebut memberikan bunga sebesar 1,5% setiap tahun.  Bu Asil menabung selama 5 tahun. Berapakah bunga dan jumlah tabungan yang dapat diambil sekarang?”
+    <figure style="text-align: center">
+        <img src="images/percobaan4-1.png" alt="Percobaan04-1"/>
+        <figcaption style="text-align: center">Studi Kasus Rute Olahraga Katak</figcaption>
+    </figure>
+    
+    Katak memulai olahraganya dari lily pad yang berlabel S dan berakhir pada lily pad seperti yang ditunjukkan pada gambar (katak yang ditampilkan telah selesai melompat). Setiap titik hitam  yang ada pada gambar menandai lily pad tempat katak mendarat.  Arah panah pada gambar diatas menunjukan Label arah katak melompat. Tuliskan urutan yang dapat mendeskripsikan jalur lompatan katak?
     
     **Jawaban**
     
-    Input: Jumlah tabungan, bunga setiap bulan, lama menabung
+    Urutan yang sesuai dengan rute olahraga katak adalah S-0-0-6-6-6-4-4-2-2-4-4-1. Penjelasan urutan yang benar sebagai berikut:
+    *   Dari start katak melompat sesuai arah 0 
+    *   Kemudian melompat lagi sesuai arah 0
+    *   Selanjutnya katak belok ke lily pad sesuai arah 6
+    *   ….
+    *	….
+    
+3. Selesaikan permasalahan dibawah ini dengan langkah-langkah logis sesuai dengan ulasan teori yang sudah dijelaskan sebelumnya. “Pak ahmad memiliki sebidang tanah berbentuk persegi. Jika keliling lahan dari pak Ahmad adalah 64m, Berapakah Panjang sisi dan Luas dari lahan pak Ahmad?”
+
+    **Jawaban**
+    
+    Input		: Jumlah keliling lahan pak ahmad
      
-    Output: bunga, jumlah tabungan sekarang
+    Output		: Luas lahan
     
-    Data Lain: -
+    Data Lain	: -
     
-    Proses:
+    Proses		:
     
-    * Masukkan jumlah tabungan, lama menabung, dan prosentase bunga
-    * Hitung bunga = lama menabung x prosentase bunga x jumlah tabungan
-    * Hitung jumlah tabungan = bunga + jumlah tabungan
-    * Output bunga dan jumlah tabungan
+    *	Masukkan keliling lahan
+    *	Hitung Panjang sisi dari lahan pak Ahmad, Sisi = Keliling : 4
+    *	Hitung luas = sisi x sisi
+    *	Output luas lahan pak Ahmad
+
+    **Pertanyaan**
     
-    Pertanyaan
-    1. Sebutkan secara terurut rutinitas yang Anda lakukan di pagi hari seperti percobaan 1 soal ke-1!
-    2. Sebutkan secara terurut rutinitas yang Anda lakukan sepulang kuliah seperti percobaan 1 soal ke-1!
-    3. Hitunglah secara matematis hasil dari percobaan 1 soal ke-2! Berapakah hasilnya?
-    4. Jika terdapat informasi tambahan mengenai biaya administrasi sebesar 12 ribu per bulan untuk soal ke-2 percobaan 1. Tuliskan kembali langkah-langkah pembuatan algoritma yang benar! Berapakah jumlah tabungan yang dapat diambil?
-    5. Setelah data tambahan soal no.4 berapakah tabungan yang bisa diambil ibu Asil setelah 7 tahun?
+    1.	Sebutkan secara terurut rutinitas yang Anda lakukan sepulang kuliah seperti percobaan 1 soal ke-1!
+    2.	Tulis ulang dan lengkapi algoritma yang ada pada percobaan 1 No. 2!
+    3.	Hitunglah secara matematis hasil dari percobaan 1 soal ke-3! Berapakah hasilnya?
+    4.	Jika terdapat informasi tambahan sebagai berikut
+    “Pak Ahmad ingin menanam bunga mawar berbentuk lingkaran pada tengah - tengah lahannya. Pak ahmad ingin memaksimalkan lahannya sehingga sebisa mungkin hanya tersisa sedikit tanah yang kosong. Berapakah luas lahan pak Ahmad yang ditanami bunga Mawar?”
+    Tuliskan kembali langkah-langkah pembuatan algoritma yang benar! 
+    5.	Setelah data tambahan soal no.4 berapakah luas lahan pak Ahmad yang tidak ditanami bunga mawar ?
+
     
 ### Percobaan 2: Menyelesaikan Studi Kasus Tentang Pemilihan
 
@@ -222,19 +242,15 @@ Pertanyaan!
         <figcaption style="text-align: center">Tugas 01</figcaption>
     </figure>
     
-2. Sebelum menjawab pertanyaan pada soal berikut, buat terlebh dahulu algoritmanya. Terdapat seekor berang-berang yang memiliki ketentuan tentang pakaian yang dikenakan. Aturan tersebut sesuai dengan gambar 6 berikut ini:
+2. Sebelum menjawab pertanyaan pada soal berikut, buat terlebih dahulu algoritmanya. 
+   Lucia dan teman-temannya adalah pengguna social media. Di bawah ini adalah diagram yang menggambarkan hubungan antara Lucia dan teman-temannya. Setiap baris menunjukkan persahabatan.
 
     <figure style="text-align: center">
-        <img src="images/tugas-1.png" alt="Tugas 02"/>
-        <figcaption style="text-align: center">Tugas 02</figcaption>
+        <img src="images/percobaan5-1.png" alt="Tugas 02"/>
+        <figcaption style="text-align: center">Jejaring teman</figcaption>
     </figure>
     
-    Sesuai dengan aturan di atas. Manakah tupai di bawah ini yang memakai pakaian **tidak sesuai** dengan ketentuan?
-    
-    <figure style="text-align: center">
-        <img src="images/tugas-2.png" alt="Tugas 03"/>
-        <figcaption style="text-align: center">Tugas 03</figcaption>
-    </figure>
+    Lucia mengirim foto ke beberapa temannya.Masing-masing teman mengirim foto ke semua teman mereka. Agar Jacob tidak menerima foto, maka siapa saja yang harus lucia kirimi foto?    
      
 3. Lakukan wawancara dengan mahasiswa dalam satu kelas (Pilihlah 10-15 orang mahasiswa) yang sama dengan Anda! Catat informasi mengenai nama panggilan, golongan darah, tanggal lahir, bulan lahir, asal daerah, hobby. Sajikan informasi tersebut dalam suatu jaringan seperti contoh berikut (media pembuat jaringan bebas)
 
@@ -249,6 +265,6 @@ Pertanyaan!
     * Siapa yang lahir pada tanggal yang sama dengan Anda?
     * Siapakah yang berasal dari daerah yang sama dengan Anda?
     * Siapakah yang memiliki hobby sama dengan Anda?
-4. Buatlah algoritma untuk menghitung luas permukaan tabung!
+4. Buatlah algoritma untuk menghitung luas permukaan Limas!
 
 
