@@ -68,12 +68,11 @@ Algoritma dinilai dari hasil yang benar sesuai keinginan, menghasilkan output ya
 
     <figure style="text-align: center">
               <img src="images/percobaan1-1.png" alt="Percobaan01-1"/>
-              <figcaption style="text-align: center">Percobaan01-1</figcaption>
     </figure>
     
     <figure style="text-align: center">
         <img src="images/percobaan1-2.png" alt="Percobaan01-2"/>
-        <figcaption style="text-align: center">Percobaan01-2</figcaption>
+        <figcaption style="text-align: center">Percobaan01-1</figcaption>
     </figure>
     
     Akan tetapi, terdapat 2 rutinitas yang tidak tepat urutanya. Bagaimanakah urutan yang benar?
