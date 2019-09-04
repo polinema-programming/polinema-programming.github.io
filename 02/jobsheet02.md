@@ -66,9 +66,14 @@ Algoritma dinilai dari hasil yang benar sesuai keinginan, menghasilkan output ya
 
 1. Setiap pagi gabrielle melakukan rutinitas secara berurutan sesuai gambar 1 berikut.
 
-    ![Percobaan 1](./images/percobaan1-1.png)
+    <figure style="text-align: center">
+        <img src="images/percobaan1-1.png" alt="Percobaan01-1"/>
+    </figure>
     
-    ![Percobaan 1](./images/percobaan1-2.png)
+    <figure style="text-align: center">
+        <img src="images/percobaan1-2.png" alt="Percobaan01-2"/>
+        <figcaption style="text-align: center">Percobaan01-1</figcaption>
+    </figure>
     
     Akan tetapi, terdapat 2 rutinitas yang tidak tepat urutanya. Bagaimanakah urutan yang benar?
     
@@ -113,7 +118,10 @@ Algoritma dinilai dari hasil yang benar sesuai keinginan, menghasilkan output ya
 
 Pada ilustrasi gambar 2 berikut, beaver ingin berenang menyebrang seluruh sungai yang ada. Tetapi beaver hanya diijinkan satu kali saja melewati setiap sungai yang ada. Bagaimana lintasan yang harus dilalui beaver?Gunakan algoritma untuk menyelesaikan permasalahan yang dialami beaver!
 
-![Percobaan 2](./images/percobaan2-1.png)
+<figure style="text-align: center">
+    <img src="images/percobaan2-1.png" alt="Percobaan02-1"/>
+    <figcaption style="text-align: center">Percobaan02-1</figcaption>
+</figure>
 
 Jawaban
 
@@ -151,7 +159,10 @@ Pertanyaan!
 
    Ani sedang berulang tahun hari ini. Ibu Ani ingin membagi sedikit rejeki untuk teman-teman sekelas Ani. Sejak subuh Ibu Ani sudah menyiapkan 50 pasang roti tawar gandum, satu botol selai kaca dan satu botol selai strawberry untuk membuat sandwich. Karena tidak tahu secara pasti siapakah teman-teman Ani yang suka selai kacang atau lebih memilih selai strawberry. Maka ibu Ani berencana menyiapkan sandwich dengan selai kacang sebanyak 23 dan sisanya roti roti tawar dengan selai strawberry.
    
-   ![Contoh Sandich dengan 2 jenis selai](./images/percobaan3-1.png)
+   <figure style="text-align: center">
+        <img src="images/percobaan3-1.png" alt="Percobaan03-1"/>
+        <figcaption style="text-align: center">Percobaan03-1</figcaption>
+   </figure>
    
    Bagaimanakah algoritma untuk menyiapkan roti tersebut?
    
@@ -172,7 +183,11 @@ Pertanyaan!
    * Sandwich siap disajikan (output)
    
 2. Terdapat suatu studi kasus sesuai gambar 4 berikut:
-    ![Percobaan 3](./images/percobaan3-2.png)
+
+    <figure style="text-align: center">
+        <img src="images/percobaan3-2.png" alt="Percobaan03-2"/>
+        <figcaption style="text-align: center">Percobaan03-2</figcaption>
+    </figure>
     
     Bagaimanakah algoritma untuk menyelesaikan permasalahan tersebut?
     
@@ -202,19 +217,31 @@ Pertanyaan!
 ## Tugas
 1. Buatlah ormanen dari kertas yang Anda miliki sekarang(tidak harus kertas warna)! Bentuk ornamen bebas setiap mahasiswa. Sebutkan algoritmanya menggunakan input, proses dan output ataupun data lain seperti soal-soal pada bagian praktikum. Lampirkan foto ornamen yang dibuat pada jawaban jobsheet, dan kumpulkan ornamen yang sudah dibuat di meja dosen.
 
-    ![Tugas](./images/tugas.png)
+    <figure style="text-align: center">
+        <img src="images/tugas.png" alt="Tugas 01"/>
+        <figcaption style="text-align: center">Tugas 01</figcaption>
+    </figure>
     
 2. Sebelum menjawab pertanyaan pada soal berikut, buat terlebh dahulu algoritmanya. Terdapat seekor berang-berang yang memiliki ketentuan tentang pakaian yang dikenakan. Aturan tersebut sesuai dengan gambar 6 berikut ini:
 
-    ![Tugas](./images/tugas-1.png)
+    <figure style="text-align: center">
+        <img src="images/tugas-1.png" alt="Tugas 02"/>
+        <figcaption style="text-align: center">Tugas 02</figcaption>
+    </figure>
     
     Sesuai dengan aturan di atas. Manakah tupai di bawah ini yang memakai pakaian **tidak sesuai** dengan ketentuan?
     
-    ![Tugas](./images/tugas-2.png)
+    <figure style="text-align: center">
+        <img src="images/tugas-2.png" alt="Tugas 03"/>
+        <figcaption style="text-align: center">Tugas 03</figcaption>
+    </figure>
      
 3. Lakukan wawancara dengan mahasiswa dalam satu kelas (Pilihlah 10-15 orang mahasiswa) yang sama dengan Anda! Catat informasi mengenai nama panggilan, golongan darah, tanggal lahir, bulan lahir, asal daerah, hobby. Sajikan informasi tersebut dalam suatu jaringan seperti contoh berikut (media pembuat jaringan bebas)
 
-    ![Tugas](./images/tugas-3.png)
+    <figure style="text-align: center">
+        <img src="images/tugas-3.png" alt="Tugas 04"/>
+        <figcaption style="text-align: center">Tugas 04</figcaption>
+    </figure>
     
     * Kemudian jawablah beberapa pertanyaan berikut:
     * Siapakah yang memiliki golongan darah sama dengan Anda?
