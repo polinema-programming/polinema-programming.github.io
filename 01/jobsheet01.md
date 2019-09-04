@@ -10,7 +10,7 @@
 ## Teori Singkat
 
 Java merupakan sebuah bahasa pemrograman yang multiplatform, dapat berjalan di sistem operasi windows, linux, ataupun mac OS. Dengan model aplikasi desktop, web, mobile, serta model aplikasi yang berjalan pada micro processor(Applet).
-Untuk membuat sebuah program menggunakan bahasa pemrograman java dibutuhkan 2 komponen utama yaitu Java Development Kit(JDK) dan Java Runtime Environment(JRE). 
+Untuk membuat sebuah program menggunakan bahasa pemrograman java dibutuhkan 2 komponen utama yaitu Java Development Kit(JDK) dan Java Runtime Environment(JRE).
 
 1. JDK digunakan untuk membuat aplikasi java
 2. JRE digunakan menjalankan aplikasi yang telah kita buat.
@@ -67,6 +67,9 @@ Pada gambar di atas terdapat Java Virtual Machine, merupakan sebuah mesin virtua
 1. Lakukan instalasi Text Editor, Visual Studio Code (direkomendasikan),
    Sublime, Atom, atau Notepad++ (pilih salah satu saja).
 
+   > **Catatan**: Jika anda menggunakan **Visual Studio Code** silahkan tambahkan
+   > extension [Java Extension Pack](vscode:extension/vscjava.vscode-java-pack)
+
 2. Buka Text Editor yang sudah terinstall, kemudian buatlah file baru dan simpan
    dengan nama `Latihan.java` (Huruf L menggunakan huruf kapital).
 
@@ -90,7 +93,7 @@ Pada gambar di atas terdapat Java Virtual Machine, merupakan sebuah mesin virtua
   }
   ```
 
-   Potongan kode di atas merupakan sebuah pintu masuk compiler untuk melakukan compile kode java, compile adalah proses mengubah kode java(*.java) menjadi 
+   Potongan kode di atas merupakan sebuah pintu masuk compiler untuk melakukan compile kode java, compile adalah proses mengubah kode java(*.java) menjadi
    bahasa mesin atau byte kode yang tidak bisa dibaca dengan editor biasa. Dalam sebuah file java hanya diizinkan memiliki 1 potongan kode diatas.
 
    > **Catatan**: case sensitive maksudnya adalah java memperlakukan antara huruf besar dan huruf kecil berbeda.
