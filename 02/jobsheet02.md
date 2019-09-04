@@ -67,7 +67,7 @@ Algoritma dinilai dari hasil yang benar sesuai keinginan, menghasilkan output ya
 1. Setiap pagi gabrielle melakukan rutinitas secara berurutan sesuai gambar 1 berikut.
 
     <figure style="text-align: center">
-              <img src="images/percobaan1-1.png" alt="Percobaan01-1"/>
+        <img src="images/percobaan1-1.png" alt="Percobaan01-1"/>
     </figure>
     
     <figure style="text-align: center">
