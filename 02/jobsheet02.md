@@ -161,7 +161,7 @@ Jika melewati sungai A, maka :
 * Dari D memiliki pilihan ke sungai E/F/G. Jika memilih F atau G maka kemungkinan satu sungai harus dilewati lebih dari satu kali. Maka dipilihlah sungai E
 * Dari E dilanjutkan ke sungai yang terhubung dan searah yaitu sungai H
 * Dari sungai H dilanjutkan ke sungai yang berhubungan dan searah yaitu F-G-C
-* Jadi lintasan yang dilalui Beaver adalah B-C-G-F-H-E-D-A (output)
+* Jadi lintasan yang dilalui Beaver adalah B-A-D-E-H-F-G-C (output)
 
 Jika melewati sungai C, maka......
 * Jika dimulai dari D maka lintasan yang dapat dilalui....
