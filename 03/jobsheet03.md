@@ -378,6 +378,16 @@ Arithmatic operator (operator aritmatika) adalah operator yang berfungsi untuk o
 | Pembagian     | /      | a / b  |
 | Sisa Bagi     | %      | a % b  |
 
+Contoh penggunaan:
+```java
+int a = 6, b = 3;
+System.out.println(a+b); //hasilnya 9
+System.out.println(a-b); //hasilnya 3
+System.out.println(a*b); //hasilnya 18
+System.out.println(a/b); //hasilnya 2
+System.out.println(a%b); //hasilnya 0
+```
+
 ##### Operator Increment dan Decrement
 Digunakan untuk menaikan atau menurunkan suatu nilai integer (bilangan bulat) sebanyak satu satuan, dan hanya dapat digunakan pada variabel
 
@@ -387,6 +397,15 @@ Digunakan untuk menaikan atau menurunkan suatu nilai integer (bilangan bulat) s
 | Pre increment | ++     | ++a    |
 | Post decrement| --     | a--    |
 | Pre decrement | --     | --a    |
+
+Contoh penggunaan:
+```java
+int a = 6;
+System.out.println(a++); //hasilnya 6
+System.out.println(++a); //hasilnya 8
+System.out.println(a--); //hasilnya 8
+System.out.println(--a); //hasilnya 6
+```
 
 ##### Operator Assignment
 Operator assignment dalam Java digunakan untuk memberikan sebuah nilai ke sebuah variabel. Operator assignment hanya berupa `=`.
@@ -400,6 +419,24 @@ Operator assignment dalam Java digunakan untuk memberikan sebuah nilai ke sebuah
 | Pengisian dan Pembagian   | /=     | a /= b |
 | Pengisian dan Sisa bagi   | %=     | a %= b |
 
+Contoh penggunaan:
+```java
+int a, b;
+a = 6;
+b = 3;
+System.out.println(a); //hasilnya 6
+a += b;
+System.out.println(a); //hasilnya 9
+a -= b;
+System.out.println(a); //hasilnya 6
+a *= b;
+System.out.println(a); //hasilnya 18
+a /= b;
+System.out.println(a); //hasilnya 6
+a %= b;
+System.out.println(a); //hasilnya 0
+```
+
 ##### Operator Relasi
 Operator relasi dalam Java digunakan untuk menghasilkan nilai boolean yang sering digunakan untuk mengatur alur jalannya sebuah program. Nilai yang dihasilkan dari operator ini adalah `true` atau `false`.
 
@@ -412,14 +449,33 @@ Operator relasi dalam Java digunakan untuk menghasilkan nilai boolean yang serin
 | Lebih Besar Sama dengan | >=     | a >= b |
 | Lebih Kecil Sama dengan | <=     | a <= b |
 
+Contoh penggunaan:
+```java
+int a = 6, b = 3;
+System.out.println(a > b); //hasilnya true
+System.out.println(a < b); //hasilnya false
+System.out.println(a == b); //hasilnya false
+System.out.println(a != b); //hasilnya true
+System.out.println(a >= b); //hasilnya true
+System.out.println(a <= b); //hasilnya false
+```
+
 ##### Operator Logika
 Operator ini digunakan untuk ekspresi logik yang menghasilkan nilai boolean, `true atau false`.
 
 | Nama       | Simbol | Contoh |
 | ---        | ---    | ---    |
 | Logika AND | &&     | a && b |
-| Logika OR  | ||     | a || b |
+| Logika OR  | &#x7c;&#x7c;     | a || b |
 | Logika NOT | !      | ! a    |
+
+Contoh penggunaan:
+```java
+boolean a = true, b = false;
+System.out.println(a && b); //hasilnya false
+System.out.println(a || b); //hasilnya true
+System.out.println(!a); //hasilnya false
+```
 
 ##### Operator Bitwise
 Operator ini digunakan untuk melakukan manipulasi bit dari sebuah bilangan.
@@ -427,13 +483,61 @@ Operator ini digunakan untuk melakukan manipulasi bit dari sebuah bilangan.
 | Nama                  | Simbol | Contoh |
 | ---                   | ---    | ---    |
 | AND                   | &      | a & b  |
-| OR                    | |      | a | b  |
+| OR                    | &#x7c;      | a | b  |
 | XOR                   | ^      | a ^ b  |
 | Negasi/kebalikan      | ~      | ~a     |
 | Left Shift            | <<     | a << b |
-| Right Shift           | >>     | a >> b |
+| Right Shift           | &#62;&#62;     | a >> b |
 | Left Shift (unsigned) | <<<    | a <<< b|
-| Right Shift (unsigned)| >>>    | a >>> b|
+| Right Shift (unsigned)| &#62;&#62;&#62;    | a >>> b|
+
+Contoh penggunaan:
+```java
+int a = 60; //ubah ke biner 00111100
+int b = 13; //ubah ke biner 00001101
+int c = 0;
+
+/*      00111100
+        00001101
+a & b = 00001100*/
+
+c = a & b;
+System.out.println(c); //hasilnya 12
+
+/*      00111100
+        00001101
+a | b = 00111101*/
+
+c = a | b;
+System.out.println(c); //hasilnya 61
+
+/*      00111100
+        00001101
+a ^ b = 00110001*/
+
+c = a ^ b;
+System.out.println(c); //hasilnya 49
+
+/*   00111100
+!a = 11000011*/
+
+c = ~a;
+System.out.println(c); //hasilnya -61
+
+/*       00111100
+a << 2 = 11110000*/
+
+c = a << 2;
+System.out.println(c); //hasilnya 240
+
+/*       00111100
+a << 2 = 00001111*/
+
+c = a >> 2;
+System.out.println(c); //hasilnya 15
+c = a >>> 2;
+System.out.println(a >>> 2); //hasilnya 15
+```
 
 ### Langkah Praktikum
 ikuti langkah-langkah praktikum berikut ini.
