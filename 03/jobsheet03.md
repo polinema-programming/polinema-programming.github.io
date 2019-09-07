@@ -357,6 +357,84 @@ class Hello {
 }
 ```
 
+#### Operator
+Operator merupakan simbol yang biasa digunakan dalam menulis suatu penyataan (statement) dalam bahasa pemrograman apapun. Operator akan melakukan suatu operasi terhadap operand sesuai dengan fungsinya. Jenis-jenis operator adalah sebagai berikut
+
+- Operator Aritmatika
+- Operator Increment dan Decrement
+- Operator Assignment
+- Operator Relasi 
+- Operator Logika
+- Operator Bitwise
+
+##### Operator Aritmatika
+Arithmatic operator (operator aritmatika) adalah operator yang berfungsi untuk operasi aritmatika.
+
+| Nama          | Simbol | Contoh |
+| ---           | ---    | ---    |
+| Penjumlahan   | +      | a + b  |
+| Pengurangan   | -      | a - b  |
+| Perkalian     | *      | a * b  |
+| Pembagian     | /      | a / b  |
+| Sisa Bagi     | %      | a % b  |
+
+##### Operator Increment dan Decrement
+Digunakan untuk menaikan atau menurunkan suatu nilai integer (bilangan bulat) sebanyak satu satuan, dan hanya dapat digunakan pada variabel
+
+| Nama          | Simbol | Contoh |
+| ---           | ---    | ---    |
+| Post increment| ++     | a++    |
+| Pre increment | ++     | ++a    |
+| Post decrement| --     | a--    |
+| Pre decrement | --     | --a    |
+
+##### Operator Assignment
+Operator assignment dalam Java digunakan untuk memberikan sebuah nilai ke sebuah variabel. Operator assignment hanya berupa `=`.
+
+| Nama                      | Simbol | Contoh |
+| ---                       | ---    | ---    |
+| Pengisian Nilai           | =      | a = b  |
+| Pengisian dan Penambahan  | +=     | a += b |
+| Pengisian dan Pengurangan | -=     | a -= b |
+| Pengisian dan Perkalian   | *=     | a *= b |
+| Pengisian dan Pembagian   | /=     | a /= b |
+| Pengisian dan Sisa bagi   | %=     | a %= b |
+
+##### Operator Relasi
+Operator relasi dalam Java digunakan untuk menghasilkan nilai boolean yang sering digunakan untuk mengatur alur jalannya sebuah program. Nilai yang dihasilkan dari operator ini adalah `true` atau `false`.
+
+| Nama                    | Simbol | Contoh |
+| ---                     | ---    | ---    |
+| Lebih Besar             | >      | a > b  |
+| Lebih Kecil             | <      | a < b  |
+| Sama Dengan             | ==     | a == b |
+| Tidak Sama dengan       | !=     | a != b |
+| Lebih Besar Sama dengan | >=     | a >= b |
+| Lebih Kecil Sama dengan | <=     | a <= b |
+
+##### Operator Logika
+Operator ini digunakan untuk ekspresi logik yang menghasilkan nilai boolean, `true atau false`.
+
+| Nama       | Simbol | Contoh |
+| ---        | ---    | ---    |
+| Logika AND | &&     | a && b |
+| Logika OR  | ||     | a || b |
+| Logika NOT | !      | ! a    |
+
+##### Operator Bitwise
+Operator ini digunakan untuk melakukan manipulasi bit dari sebuah bilangan.
+
+| Nama                  | Simbol | Contoh |
+| ---                   | ---    | ---    |
+| AND                   | &      | a & b  |
+| OR                    | |      | a | b  |
+| XOR                   | ^      | a ^ b  |
+| Negasi/kebalikan      | ~      | ~a     |
+| Left Shift            | <<     | a << b |
+| Right Shift           | >>     | a >> b |
+| Left Shift (unsigned) | <<<    | a <<< b|
+| Right Shift (unsigned)| >>>    | a >>> b|
+
 ### Langkah Praktikum
 ikuti langkah-langkah praktikum berikut ini.
 
