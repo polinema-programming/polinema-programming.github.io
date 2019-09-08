@@ -278,7 +278,7 @@ bilangan bulat (int), bilangan koma (float/double), atau karakter (String).
 
 1. Jika input berupa bilangan bulat, maka perintahnya adalah: `nextInt();`
 2. Jika input berupa bilangan koma, maka perintahnya adalah: `nextFloat();`
-3. Jika input berupa bilangan bulat, maka perintahnya adalah: `nextLine();`
+3. Jika input berupa teks, maka perintahnya adalah: `nextLine();`
 
 **Contoh**:
 
@@ -325,37 +325,6 @@ bilangan bulat (int), bilangan koma (float/double), atau karakter (String).
   Nilai dari panjang: 15
   Nilai dari lebar: 7
   ```
-
-**Catatan**:
-
-Jika didalam program terdapat beberapa input yang berbeda-beda tipe datanya,
-maka deklarasi scanner harus dibuat sejumlah tipe data input yang berbeda
-tersebut. Misalkan terdapat satu input berupa bilangan bulat dan satu input
-berupa String, maka perlu dibuat dua deklarasi scanner (satu untuk int dan satu
-untuk String).
-
-Contoh:
-
-```java
-import java.util.Scanner;
-
-class Hello {
-  public static void main(String args[]) {
-    Scanner scInt = new Scanner(System.in);
-    Scanner scString = new Scanner(System.in);
-
-    int usia;
-    String nama;
-
-    System.out.print("Masukkan usia anda: ");
-    panjang = scInt.nextInt();
-    System.out.print("Masukkan nama anda: ");
-    lebar = scString.nextLine();
-    System.out.print("Nama anda: " + nama);
-    System.out.print("Usia anda: " + usia);
-  }
-}
-```
 
 #### Operator
 Operator merupakan simbol yang biasa digunakan dalam menulis suatu penyataan (statement) dalam bahasa pemrograman apapun. Operator akan melakukan suatu operasi terhadap operand sesuai dengan fungsinya. Jenis-jenis operator adalah sebagai berikut
@@ -540,37 +509,48 @@ System.out.println(a >>> 2); //hasilnya 15
 ```
 
 ### Langkah Praktikum
-ikuti langkah-langkah praktikum berikut ini.
+Ikuti langkah-langkah praktikum berikut ini.
 
 #### Praktikum 1
 
 1. Buka teks editor
-2. Buat file baru, beri nama "Hitung.java"
+2. Buat file baru, beri nama `ContohVariabel.java`
 3. Tuliskan struktur dasar bahasa java yang berisi fungsi main().
-4. Tambahkan import library Scanner di bagian paling atas kode program.
-  ```java
-  import java.util.Scanner;
-  ```
-5. Deklarasikan Scanner
-  ```java
-  Scanner sc = new Scanner(System.in);
-  ```
-6. Buatlah variabel bertipe int, beri nama variabel tersebut dengan angka.
-  ```java
-  int angka;
-  ```
-7. Tambahkan kode berikut ini untuk menerima input dari keyboard
-  ```java
-  System.out.print("Masukkan angka: ");
-  angka = sc.nextInt();
-  ```
-8. Tambahkan kode berikut ini untuk menampilkan isi dari variabel angka
-  ```java
-  System.out.println("Isi variabel angka: " + angka);
-  ```
-9. Lakukan kompilasi kemudian jalankan program. Amati apa yang terjadi.
+4. Tuliskan kode di bawah ini pada `public static void main(String args[])`
+
+    <figure style="text-align: center">
+        <img src="images/03-01.png" alt="Percobaan03-01"/>
+        <figcaption style="text-align: center">Contoh penggunaan variabel</figcaption>
+    </figure>
+    
+5. Jalankan kode program yang telah Anda buat kemudian amati hasilnya.
+
+#### Pertanyaan
+1. Silakan Anda ubah nama variabel sehingga model penamaan variabel menjadi baik dan benar!
+2. Jalankan kembali kode yang telah Anda buat kemudian amati hasilnya.
 
 #### Praktikum 2
+
+1. Buka teks editor
+2. Buat file baru, beri nama `ContohTipeData.java`
+3. Tuliskan struktur dasar bahasa java yang berisi fungsi main().
+4. Tuliskan kode di bawah ini pada `public static void main(String args[])`
+
+    <figure style="text-align: center">
+        <img src="images/03-02.png" alt="Percobaan03-02"/>
+        <figcaption style="text-align: center">Contoh penggunaan tipe data</figcaption>
+    </figure>
+    
+5. Jalankan kode program yang telah Anda buat kemudian amati hasilnya.
+
+#### Pertanyaan
+1. Mengapa ketika menampilkan nilai `golonganDarah` hasilnya bukan `A`?
+2. Maksud sintak `byte jarak = (byte) 130` apa? kemudian mengapa ketika ditampilkan hasilnya berubah?
+3. Pada `float suhu = 60.50F;`, silakan hilangkan `F` kemudian jalankan kembali. Apa yang terjadi?
+4. Mengapa ketika menampilkan nilai `berat`, hasilnya berubah?
+5. Maksud inisialisasi `0x10` pada variabel `angkaDesimal` digunakan untuk apa?
+
+#### Praktikum 3
 1. Buat file baru beri nama Segitiga.java
 2. Amati flowchart program untuk menghitung luas segitiga berikut ini:
 
