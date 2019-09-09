@@ -520,12 +520,12 @@ Ikuti langkah-langkah praktikum berikut ini.
 
     <figure style="text-align: center">
         <img src="images/03-01.png" alt="Percobaan03-01"/>
-        <figcaption style="text-align: center">Contoh penggunaan variabel</figcaption>
+        <figcaption style="text-align: center; font-weight: bold">Contoh penggunaan variabel</figcaption>
     </figure>
     
 5. Jalankan kode program yang telah Anda buat kemudian amati hasilnya.
 
-#### Pertanyaan
+##### Pertanyaan
 1. Silakan Anda ubah nama variabel sehingga model penamaan variabel menjadi baik dan benar!
 2. Jalankan kembali kode yang telah Anda buat kemudian amati hasilnya.
 
@@ -538,12 +538,12 @@ Ikuti langkah-langkah praktikum berikut ini.
 
     <figure style="text-align: center">
         <img src="images/03-02.png" alt="Percobaan03-02"/>
-        <figcaption style="text-align: center">Contoh penggunaan tipe data</figcaption>
+        <figcaption style="text-align: center; font-weight: bold">Contoh penggunaan tipe data</figcaption>
     </figure>
     
 5. Jalankan kode program yang telah Anda buat kemudian amati hasilnya.
 
-#### Pertanyaan
+##### Pertanyaan
 1. Mengapa ketika menampilkan nilai `golonganDarah` hasilnya bukan `A`?
 2. Maksud sintak `byte jarak = (byte) 130` apa? kemudian mengapa ketika ditampilkan hasilnya berubah?
 3. Pada `float suhu = 60.50F;`, silakan hilangkan `F` kemudian jalankan kembali. Apa yang terjadi?
@@ -551,10 +551,31 @@ Ikuti langkah-langkah praktikum berikut ini.
 5. Maksud inisialisasi `0x10` pada variabel `angkaDesimal` digunakan untuk apa?
 
 #### Praktikum 3
+
+1. Buka teks editor
+2. Buat file baru, beri nama `ContohOperator.java`
+3. Tuliskan struktur dasar bahasa java yang berisi fungsi main().
+4. Tuliskan kode di bawah ini pada `public static void main(String args[])`
+
+    <figure style="text-align: center">
+        <img src="images/03-03.png" alt="Percobaan03-03"/>
+        <figcaption style="text-align: center; font-weight: bold">Contoh penggunaan operator</figcaption>
+    </figure>
+    
+5. Jalankan kode program yang telah Anda buat kemudian amati hasilnya.
+
+##### Pertanyaan
+1. Jelaskan menurut pendapat Anda perbedaan antara `x++` dan `++x`?
+2. Berapa hasil dari `int z = x ^ y;`, silakan dilakukan perhitungan secara manual!
+
+#### Praktikum 4
 1. Buat file baru beri nama Segitiga.java
 2. Amati flowchart program untuk menghitung luas segitiga berikut ini:
 
-  ![flowchart segitiga](images/tabung.svg)
+    <figure style="text-align: center">
+          <img src="images/tabung.svg" alt="Praktikum 04"/>
+          <figcaption style="text-align: center; font-weight: bold">Flow chart segitiga</figcaption>
+      </figure>
 
 3. Buatlah struktur dasar program Java yang terdiri dari fungsi main().
 4. Tambahkan library Scanner
@@ -581,97 +602,8 @@ Ikuti langkah-langkah praktikum berikut ini.
   ```
 10. Lakukan kompilasi dan jalankan program. Amati apa yang terjadi.
 
-#### Praktikum 3
-1. Buat file baru beri nama Biodata.java
-2. Buat struktur dasar program java yang berisi fungsi main()
-3. Tambahkan library Scanner.
-4. Buat dua deklarasi Scanner. Satu untuk input berupa int dan satu untuk
-   String.
-   ```java
-  Scanner scInt = new Scanner(System.in);
-  Scanner scString = new Scanner(System.in);
-   ```
-5. Buat variabel String untuk nama dan noHp, kemudian variabel int untuk usia
-   dan tinggiBadan.
-   ```java
-   String nama, noHp;
-   int usia, tinggiBadan;
-   ```
-6. Tuliskan kode untuk menginputkan nama, noHP, usia dan tinggiBadan.
-  ```java
-  System.out.print("Masukkan nama: ");
-  nama = scString.nextLine();
-
-  System.out.print("Masukkan no HP: ");
-  noHp = scString.nextLine();
-
-  System.out.print("Masukkan usia: ");
-  usia = scInt.nextInt();
-
-  System.out.print("Tinggi badan: ");
-  tinggiBadan = scInt.nextInt();
-  ```
-7. Tuliskan kode untuk menampilkan biodata
-  ```java
-  System.out.println("Nama: " + nama);
-  System.out.println("No. HP: " + noHp);
-  System.out.println("Usia: " + usia);
-  System.out.println("Tinggi badan: " + tinggiBadan);
-  ```
-8. Lakukan kompilasi dan jalankan program, amati apa yang terjadi.
-
-#### Pertanyaan
-Jawablah pertanyaan berikut ini.
-1. Apa yang dimaksud dengan variabel?
-2. Jelaskan masing-masing kegunaan tipe variabel berikut ini:
-  - int
-  - float
-  - String
-
-3. Apa kegunaan dari perintah:
-  - int angka;
-  - String alamat;
-  - int panjang = 100;
-  - import java.util.Scanner;
-  - Scanner sc = new Scanner(System.in);
-  - System.out.print("Isi variabel angka: " + angka);
-  - angka = sc.nextInt();
-  - alamat = sc.nextLine();
-
-4. Amati kode program berikut ini:
-
-```java
-import java.util.Scanner;
-
-class Hello {
-  public static void main(String args[]) {
-    Scanner sc = new Scanner(System.in);
-
-    int usia;
-
-    System.out.print("Masukkan usia anda: ");
-    umur = sc.nextInt();
-
-    System.out.println("Usia anda: " + usia);
-  }
-}
-```
-
-Bagian mana kode tersebut terdapat kesalahan? dan seharusnya bagaimana?
-
 ### Tugas
 Kerjakan tugas sesuai dengan instruksi berikut ini.
-
-- Dengan menggunakan fungsi `System.out.println()` dan penggunaan karakter escape
-   sequence, buatlah program untuk menampilkan biodata anda  dengan format
-   seperti berikut ini:
-
-   ```
-   NIM    : "1234567890"
-   Nama   : "Indah Cantik Jelita"
-   Kelas  : "TI-MI"
-   Alamat : "Malang"
-   ```
 
 - Perhatikan tabel di bawah ini:
 
@@ -681,7 +613,7 @@ Kerjakan tugas sesuai dengan instruksi berikut ini.
 | tingkat          | Bilangan bulat   | 1          |                         |
 | kelas            | Karakter         | Z          | nilai awal = kelas anda |
 | bilanganBulat    | Bilangan bulat   | 10         |                         |
-| bilanganPecahang | Bilangan pecahan | 3.33333    |                         |
+| bilanganPecahan | Bilangan pecahan | 3.33333    |                         |
 | karakter         | Karakter         | C          |                         |
 
   Dari informasi tabel tersebut, buatlah program untuk menampilan hasil seperti
@@ -695,10 +627,17 @@ Kerjakan tugas sesuai dengan instruksi berikut ini.
       Karakter C
   ```
 
+- Buatlah tampilan yang menghasilkan output di bawah ini
+
+    `Saya ❤ bapak dan ibu setulus hati`
+
 - Perhatikan baik-baik diagram flowchart program menghitung volume tabung
    berikut ini:
 
-  ![flowchart tabung](images/tabung.svg)
+  <figure style="text-align: center">
+          <img src="images/suhu.svg" alt="Tugas 2"/>
+          <figcaption style="text-align: center; font-weight: bold">Flow chart konversi suhu</figcaption>
+      </figure>
 
   Implementasikan flowchart yang telah dirancang ke dalam program dengan
   menggunakan bahasa pemrograman java!
