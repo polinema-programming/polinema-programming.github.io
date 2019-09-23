@@ -168,3 +168,76 @@ else {
 
 Sehingga ketika angka yang dimasukkan nilainya 70 atau kurang dari 70 maka akan
 muncul tampilan **Silahkan coba tes lagi tahun depan**.
+
+## Sintaks Pemilihan `if else if else`
+
+Bentuk Umum:
+
+```java
+if (kondisi1) {
+  pernyataan-1;
+} else if (kondisi2) {
+  pernyataan-2;
+} else if (kondisix) {
+  pernyataan-x;
+} else {
+  pernyataan-else;
+}
+```
+
+Bentuk Flowchart:
+
+{% flowchart %}
+start=>start: Mulai
+end=>end: Selesai
+cond1=>condition: Ya atau Tidak?
+cond2=>condition: Ya atau Tidak?
+condx=>condition: Ya atau Tidak?
+op1=>operation: pernyataan 1
+op2=>operation: pernyataan 2
+opx=>operation: pernyataan x
+op=>operation: pernyataan else
+
+start->cond1
+cond1(no, right)->cond2
+cond2(no, right)->condx
+condx(no, right)->op->end
+
+cond1(yes)->op1->end
+cond2(yes)->op2->end
+condx(yes)->opx->end
+{% endflowchart %}
+
+Pada bentuk `if else if else` di atas, pernyataan 1 akan dijalankan apabila
+`kondisi1` bernilai benar. Jika `kondisi1` bernilai salah, maka akan dicek
+`kondisi2`. Jika `kondisi2` benar maka akan dijalankan pernyataan2, begitu
+seterusnya. Dan apabila tidak ada satupun syarat yang terpenuhi, barulah
+pernyataan-else akan dikerjakan.
+
+Contoh program:
+
+```java
+import java.util.Scanner;
+
+public class Contoh {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    int bayar;
+
+    System.out.print("Masukkan total belanja anda: ");
+    bayar = input.nextInt();
+
+    if (bayar >= 2000000) {
+      System.out.println("Selamat anda mendapatkan hadiah kompor gas");
+    } else if (bayar >= 1000000) {
+      System.out.println("Selamat anda mendapatkan hadiah teflon");
+    } else if (bayar >= 500000) {
+      System.out.println("Selamat anda mendapatkan hadiah piring");
+    } else {
+      System.out.println("Maaf anda belum beruntung, tingkatkan belanja anda!");
+    }
+
+  }
+}
+```
