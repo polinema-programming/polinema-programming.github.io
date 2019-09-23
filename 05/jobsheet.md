@@ -241,3 +241,73 @@ public class Contoh {
   }
 }
 ```
+
+## Sintaks pemilihan `switch case`
+
+Sintaks pemilihan ini digunakan untuk penyelesaian kondisi dengan kemungkinan
+yang terjadi cukup banyak. Struktur ini akan melaksanakan salah satu dari
+beberapa pernyataan `case` tergantung nilai kondisi yang ada di dalam `switch`.
+Selanjutnya proses diteruskan hingga ditemukan pernyataan `break`. Jika tidak
+ada nilai pada case yang sesuai dengan nilai kondisi, maka proses akan
+diteruskan kepada pernyataan yang ada di bawah `default`. Bentuk `switch case`
+pada umumnya digunakan untuk menggantikan pernyataan `if else if else` yang
+berdasarkan nilai konstanta.
+
+Bentuk umum:
+
+```java
+switch (kondisi) {
+case konstanta-1:
+  pernyataan-1;
+  break;
+case konstanta-2:
+  pernyataan-2;
+  break;
+  ...
+  ...
+case konstanta-x:
+  pernyataan-x;
+  break;
+default:
+  pernyataan;
+}
+```
+
+Contoh program:
+
+```java
+import java.util.Scanner;
+
+public class Contoh {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    int angka;
+
+    System.out.print("Masukkan kode kelas anda: ");
+    angka = input.nextInt();
+
+    switch(angka) {
+      case 1:
+        System.out.println("Kelas 1");
+        break;
+      case 2:
+        System.out.println("Kelas 2");
+        break;
+      case 3:
+        System.out.println("Kelas 3");
+        break;
+      case 4:
+        System.out.println("Kelas 4");
+        break;
+      default:
+        System.out.println("Kode yang anda masukkan salah");
+    }
+
+  }
+}
+```
+
+Pada contoh program `switch case` di atas jika dimasukkan angka `1` maka
+outputnya **Kelas 1** dan seterusnya sampai angka `4`. Jika inputan selain angka
+`1` s/d `4` maka outputnya adalah **Kode yang anda masukkan salah**.
