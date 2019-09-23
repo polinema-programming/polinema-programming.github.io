@@ -1,3 +1,4 @@
 {
-  "language": "id"
+  "language": "id",
+  "plugins": ["flowchart"]
 }

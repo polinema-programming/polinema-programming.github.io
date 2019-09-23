@@ -13,5 +13,8 @@
   "devDependencies": {
     "gitbook": "git+https://github.com/dhanifudin/gitbook.git",
     "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-flowchart": "^1.1.0"
   }
 }
