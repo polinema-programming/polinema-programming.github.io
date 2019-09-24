@@ -311,3 +311,290 @@ public class Contoh {
 Pada contoh program `switch case` di atas jika dimasukkan angka `1` maka
 outputnya **Kelas 1** dan seterusnya sampai angka `4`. Jika inputan selain angka
 `1` s/d `4` maka outputnya adalah **Kode yang anda masukkan salah**.
+
+## Langkah Praktikum
+
+Ikuti langkah-langkah praktikum berikut ini.
+
+### Praktikum 1
+
+1. Perhatikan flowchart di bawah ini!
+
+   <figure style="text-align: center">
+        <img src="images/05-19.png" alt="Flowchart If"/>
+    </figure>
+
+   Flowchart diatas digunakan untuk menentukan bilangan ganjil/genap,
+   selanjutnya kita akan membuat programnya berdasarkan flowchart di atas!
+
+2.	Buka Netbeans yang sudah anda install
+3.	Buat project baru dengan nama “Pemilihan1” dengan cara `File -> New Project
+    -> Java Application ->Next ->Pemilihan1 ->Finish`
+
+   <figure style="text-align: center">
+        <img src="images/05-20.png" alt="Flowchart If"/>
+        <figcaption style="text-align: center; font-weight: bold">New Project</figcaption>
+    </figure>
+
+   <figure style="text-align: center">
+        <img src="images/05-21.png" alt="Flowchart If"/>
+        <figcaption style="text-align: center; font-weight: bold">Java Application</figcaption>
+    </figure>
+
+   <figure style="text-align: center">
+        <img src="images/05-22.png" alt="Flowchart If"/>
+        <figcaption style="text-align: center; font-weight: bold">Project Name</figcaption>
+    </figure>
+
+4.	Maka akan terdapat 1 buat project dengan nama Pemilihan 1 dan didalamnya
+    terdapat 1 file dengan nama `Pemilihan1.java`
+
+   <figure style="text-align: center">
+        <img src="images/05-23.png" alt="Flowchart If"/>
+    </figure>
+
+5.	Tambahkan import library Scanner.
+6.	Deklarasikan Scanner:
+
+   <figure style="text-align: center">
+        <img src="images/05-24.png" alt="Flowchart If"/>
+    </figure>
+
+7.	Buatlah variabel bertipe int dengan nama bil
+
+   <figure style="text-align: center">
+        <img src="images/05-25.png" alt="Flowchart If"/>
+    </figure>
+
+8.	Tambahkan kode berikut ini untuk menerima inputan dari keyboard:
+
+   <figure style="text-align: center">
+        <img src="images/05-26.png" alt="Flowchart If"/>
+    </figure>
+
+9.	Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
+
+   <figure style="text-align: center">
+        <img src="images/05-27.png" alt="Flowchart If"/>
+    </figure>
+
+10.	Jalankan program, maka outputnya adalah sebagai berikut:
+
+   <figure style="text-align: center">
+        <img src="images/05-28.png" alt="Flowchart If"/>
+    </figure>
+
+#### Pertanyaan!
+
+1.	Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
+
+   <figure style="text-align: center">
+        <img src="images/05-29.png" alt="Flowchart If"/>
+    </figure>
+
+2.	Jalankan dan amatilah hasilnya!
+3.	Jelaskan mengapa output program yang dimodifikasi sama dengan output program sebelum dimodifikasi!
+
+### Praktikum 2
+
+1.	Buat file baru beri nama “Percobaan2.java” di project  “Pemilihan1”.
+
+   <figure style="text-align: center">
+        <img src="images/05-30.png" alt="Flowchart If"/>
+    </figure>
+
+   <figure style="text-align: center">
+        <img src="images/05-31.png" alt="Flowchart If"/>
+    </figure>
+
+2.	Tambahakan library `Scanner`.
+3.	Buatlah deklarasi `Scanner`.
+4.	Buat variabel nilai bertipe int.
+
+   <figure style="text-align: center">
+        <img src="images/05-32.png" alt="Flowchart If"/>
+    </figure>
+
+5.	Tuliskan perintah untuk memasukkan inputan.
+
+   <figure style="text-align: center">
+        <img src="images/05-33.png" alt="Flowchart If"/>
+    </figure>
+
+6.	Tambahkan kode program kondisi dibawah ini
+
+   <figure style="text-align: center">
+        <img src="images/05-34.png" alt="Flowchart If"/>
+    </figure>
+
+7.	Jalankan program. Amati apa yang terjadi!
+
+### Pertanyaan
+
+1.	Jelaskan fungsi kode program berikut:
+   ```java
+    nilai += 10;
+    nilai += 10;
+   ```
+2.	Modifikasilah program diatas dimana inputannya yang awalnya hanya satu
+    kemudian diganti 2 inputan (misal : nilai1 dan nilai2), lakukan perhitungan
+    rata-rata kedua nilai tersebut jika nilainya lebih dari sama dengan 100 maka
+    dikurangi 5, sedangkan jika nilai rata-rata tersebut kurang dari 100 maka
+    akan langsung dicetak!
+
+### Praktikum 3
+
+1.	Buat file baru beri nama “Percobaan3.java” di project  “Pemilihan1”.
+2.	Tambahakan library Scanner.
+3.	Buatlah deklarasi Scanner.
+4.	Buat variabel umur bertipe int.
+
+   ```java
+    int umur;
+   ```
+
+5.	Tuliskan perintah untuk memasukkan inputan.
+
+   ```java
+    System.out.println("Masukkan umur Anda: ");
+    umur = input.nextInt();
+   ```
+
+6.	Tambahkan kode program kondisi dibawah ini
+
+   ```java
+    if(umur > 60) {
+       System.out.println("Lansia");
+    } else if(umur > 45) {
+       System.out.println("Tua");
+    } else if(umur > 17) {
+       System.out.println("Dewasa");
+    } else if(umur > 5) {
+       System.out.println("Anak-anak");
+    } else {
+       System.out.println("Balita");
+    }
+   ```
+
+7.	Jalankan program. Amati apa yang terjadi!
+
+#### Pertanyaan
+
+1.	Berapa jumlah kondisi yang ada pada program di percobaan 3? Jelaskan!
+2.	Modifikasi program diatas sehingga jika umur yang dimasukkan 0 tahun atau
+    kurang dari 0 akan tampil output “Maaf umur yang anda masukkan salah”!
+
+### Praktikum 4
+1.	Buat file baru beri nama “Percobaan4.java” di project  “Pemilihan1”.
+2.	Tambahakan library Scanner.
+3.	Buatlah deklarasi Scanner.
+4.	Buat variabel-variabel berikut:
+
+   ```java
+   double angka1, angka2, hasil;
+   char operator;
+   ```
+
+5.	Tuliskan perintah untuk memasukkan inputan.
+   ```java
+   System.out.println("Masukkan angka pertama: ");
+   angka1 = sc.nextDouble();
+   System.out.println("Masukkan angka kedua: ");
+   angka2 = sc.nextDouble();
+   System.out.println("Masukkan operator (+ - * /): ");
+   operator = sc.next().chartAt(0);
+   ```
+
+6.	Tambahkan kode program kondisi dibawah ini
+
+  ```java
+  switch(operator){
+    case '+':
+      hasil = angka1 + angka2;
+      System.out.println(angka1 + " + " + angka2 + "=" + hasil);
+      break;
+    case '-':
+      hasil = angka1 - angka2;
+      System.out.println(angka1 + " - " + angka2 + "=" + hasil);
+      break;
+    case '*':
+      hasil = angka1 * angka2;
+      System.out.println(angka1 + " * " + angka2 + "=" + hasil);
+      break;
+    case '/':
+      hasil = angka1 / angka2;
+      System.out.println(angka1 + " / " + angka2 + "=" + hasil);
+      break;
+  }
+  ```
+
+7.	Jalankan program. Amati apa yang terjadi!
+
+#### Pertanyaan
+
+1.	Jelaskan fungsi dari break dan default pada percobaan 4 diatas!
+2.	Jelaskan fungsi perintah kode program dibawah ini pada percobaan 4!
+   ```java
+       operator = sc.next().chartAt(0);
+   ```
+
+#### Tugas
+
+1. Buatlah program untuk menginputkan dua buah bilangan bulat, kemudian
+   mencetak salah satu bilangan yang nilainya terbesar.
+2. Perhatikan flowchart berikut ini:
+
+   <figure style="text-align: center">
+        <img src="images/05-37.png" alt="Flowchart If"/>
+    </figure>
+
+  Buatlah program sesuai dengan flowchart diatas!
+
+3. Pada akhir semester seorang dosen menghitung nilai akhir dari mahasiswa yang
+   terdiri dari nilai uas, uts, kuis, dan tugas. Nilai akhir didapatkan dari 40%
+   nilai uas, 30% nilai uts, 10% nilai kuis, dan 20% nilai tugas. Jika nilai
+   akhir dari mahasiswa dibawah 65 maka mahasiswa tersebut akan mendapatkan
+   remidi. Buatlah program untuk membantu mengetahui mahasiswa yang mendapatkan
+   remidi berdasarkan nilai akhir yang didapatkannya!
+
+4.	PT. Raharja merupakan perusahaan yang bergerak dibidang textile. Total gaji
+    yang diterima oleh karyawan di perusahaan tersebut adalah
+
+   > **Total gaji= gaji pokok + uang makan + uang transport**
+
+   Jika total gaji yang diterima oleh karyawan lebih dari sama dengan Rp.
+   1.000.000 maka dikenakan pajak 10%, tetapi untuk total gaji karyawan yang
+   dibawah Rp.1.000.000 tidak akan dikenakan pajak. Buatlah program untuk
+   membantu PT.Raharja menghitung gaji bersih yang diterima oleh masing-masing
+   karyawan!
+
+5.	Sebuah toko menyediakan fasilitas member untuk memberikan diskon kepada
+    pelanggannya. Terdapat 3 kategori member yaitu: Silver, Gold, dan Platinum.
+    Setiap total belanja yang sesuai ketentuan katagori member akan mendapatkan
+    diskon spesial sesuai dengan ketentuan berikut:
+
+| Total belanja         | Jenis potongan member | Potongan  |
+| ----------------------| --------------------- | --------  |
+| >Rp. 200.000,00       | Silver                | 2%        |
+| >Rp. 500.000,00       | Gold                  | 5%        |
+| >Rp. 1.000.000,00     | Platinum              | 10%       |
+
+   **Output:**
+
+   <figure style="text-align: left">
+        <img src="images/05-38.png" alt="Flowchart If"/>
+    </figure>
+
+   <figure style="text-align: left">
+        <img src="images/05-39.png" alt="Flowchart If"/>
+    </figure>
+
+   <figure style="text-align: left">
+        <img src="images/05-40.png" alt="Flowchart If"/>
+   </figure>
+
+   <figure style="text-align: left">
+        <img src="images/05-41.png" alt="Flowchart If"/>
+    </figure>
+
+
