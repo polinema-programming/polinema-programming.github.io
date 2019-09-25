@@ -556,6 +556,16 @@ Ikuti langkah-langkah praktikum berikut ini.
    yang dapat menampilkan menu yang disediakan serta menghitung total harga yang
    dibayarkan (ditambah dengan pajak restoran 10%) dan uang kembalian!
 
+   Ilustrasi menu restoran, dapat dilihat di bawah:
+
+   ```
+   Menu Restoran Besok Gratis
+   1. Ayam Geprek  - Rp. 100.000
+   2. Ayam Goreng  - Rp.  80.000
+   3. Bebek Geprek - Rp. 150.000
+   Masukkan pilihan anda (1 - 3):
+   ```
+
 4.	Sebuah toko menyediakan fasilitas member untuk memberikan diskon kepada
     pelanggannya. Terdapat 3 kategori member yaitu: Silver, Gold, dan Platinum.
     Setiap total belanja yang sesuai ketentuan katagori member akan mendapatkan
