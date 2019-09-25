@@ -594,6 +594,3 @@ Ikuti langkah-langkah praktikum berikut ini.
    <figure style="text-align: left">
         <img src="images/05-41.png" alt="Flowchart If"/>
     </figure>
-
-6. Buatlah aplikasi untuk menghitung pajak PPN dan PBB. Contoh tampilan
-   aplikasi, dapat anda lihat sebagai berikut.
