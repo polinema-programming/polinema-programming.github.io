@@ -550,25 +550,13 @@ Ikuti langkah-langkah praktikum berikut ini.
 
   Buatlah program sesuai dengan flowchart diatas!
 
-3. Pada akhir semester seorang dosen menghitung nilai akhir dari mahasiswa yang
-   terdiri dari nilai uas, uts, kuis, dan tugas. Nilai akhir didapatkan dari 40%
-   nilai uas, 30% nilai uts, 10% nilai kuis, dan 20% nilai tugas. Jika nilai
-   akhir dari mahasiswa dibawah 65 maka mahasiswa tersebut akan mendapatkan
-   remidi. Buatlah program untuk membantu mengetahui mahasiswa yang mendapatkan
-   remidi berdasarkan nilai akhir yang didapatkannya!
+3. Anda ingin membangun sebuah Restoran. Restoran anda setidaknya mempunyai 3
+   menu yang dapat dipilih oleh pelanggan. Pelanggan dapat memilih menu dan
+   jumlah pesanan yang diinginkan. Untuk memudahkan pelayanan restoran, buatlah program
+   yang dapat menampilkan menu yang disediakan serta menghitung total harga yang
+   dibayarkan (ditambah dengan pajak restoran 10%) dan uang kembalian!
 
-4.	PT. Raharja merupakan perusahaan yang bergerak dibidang textile. Total gaji
-    yang diterima oleh karyawan di perusahaan tersebut adalah
-
-   > **Total gaji= gaji pokok + uang makan + uang transport**
-
-   Jika total gaji yang diterima oleh karyawan lebih dari sama dengan Rp.
-   1.000.000 maka dikenakan pajak 10%, tetapi untuk total gaji karyawan yang
-   dibawah Rp.1.000.000 tidak akan dikenakan pajak. Buatlah program untuk
-   membantu PT.Raharja menghitung gaji bersih yang diterima oleh masing-masing
-   karyawan!
-
-5.	Sebuah toko menyediakan fasilitas member untuk memberikan diskon kepada
+4.	Sebuah toko menyediakan fasilitas member untuk memberikan diskon kepada
     pelanggannya. Terdapat 3 kategori member yaitu: Silver, Gold, dan Platinum.
     Setiap total belanja yang sesuai ketentuan katagori member akan mendapatkan
     diskon spesial sesuai dengan ketentuan berikut:
@@ -597,4 +585,5 @@ Ikuti langkah-langkah praktikum berikut ini.
         <img src="images/05-41.png" alt="Flowchart If"/>
     </figure>
 
-
+6. Buatlah aplikasi untuk menghitung pajak PPN dan PBB. Contoh tampilan
+   aplikasi, dapat anda lihat sebagai berikut.
