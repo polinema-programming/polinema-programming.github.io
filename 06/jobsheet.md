@@ -135,8 +135,8 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
 
    ![Percobaan1](./images/percobaan1.png)
 
-  File Percobaan1.java akan ditambahkan pada project Pemilihan2 dan class
-  Percobaan1 akan terbuka pada text Editor
+      File Percobaan1.java akan ditambahkan pada project Pemilihan2 dan class
+      Percobaan1 akan terbuka pada text Editor
 
 4. Tambahkan import library Scanner
 5. Tuliskan struktur dasar bahasa Java yang berisi fungsi main()
@@ -144,7 +144,7 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
 7. Buatlah variabel bertipe int dengan nama nilai
 8. Tambahkan kode berikut ini untuk menerima input dari keyboard
 
-  ![Input](./images/input.png)
+    ![Input](./images/input.png)
 
 9. Buatlah struktur pengecekan kondisi bersarang. Pengecekan pertama digunakan
    untuk memastikan bahwa nilai yang dimasukkan berada pada rentang 0 – 100.
@@ -154,6 +154,8 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
    maka nilainya C, jika nilai di antara 50 – 59 maka nilainya D, dan jika nilai
    di antara 0 – 49 maka nilainya E. Sedangkan jika nilai berada di luar rentang
    0 – 100, maka ditampilkan informasi bahwa nilai yang dimasukkan tidak valid.
+
+   ![Percobaan 1](./images/cek-nilai.png)
 
 10. Jalankan program tersebut. Amati apa yang terjadi!
 
@@ -172,32 +174,32 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
 
 1. Perhatikan flowchart berikut ini!
 
-  ![Flowchart](./images/flowchart-percobaan2.png)
-
-  Flowchart tersebut digunakan untuk menghitung gaji bersih seseorang setelah
-  dipotong pajak sesuai dengan kategorinya (pekerja dan pebisnis) dan besarnya
-  penghasilan.
+      ![Flowchart](./images/flowchart-percobaan2.png)
+    
+      Flowchart tersebut digunakan untuk menghitung gaji bersih seseorang setelah
+      dipotong pajak sesuai dengan kategorinya (pekerja dan pebisnis) dan besarnya
+      penghasilan.
 
 2. Jalankan NetBeans
 3. Pada project Pemilihan2, buat file java dengan cara klik kanan pada Sources
    Packages -> New -> Java Class. Masukkan nama Percobaan2 pada nama class,
    kemudian klik Finish.
 
-  ![pemilihan](./images/percobaan2.png)
-
-  File Percobaan2.java akan ditambahkan pada project Pemilihan2 dan class
-  Percobaan2 akan terbuka pada text Editor
+      ![pemilihan](./images/percobaan2.png)
+    
+      File Percobaan2.java akan ditambahkan pada project Pemilihan2 dan class
+      Percobaan2 akan terbuka pada text Editor
 
 4. Tambahkan import library Scanner
 5. Tuliskan struktur dasar bahasa Java yang berisi fungsi main()
 6. Deklarasikan Scanner dengan nama sc
 7. Deklarasikan variabel kategori, penghasilan, gajiBersih, dan pajak;
 
-  ![Deklarasi](./images/deklarasi.png)
+    ![Deklarasi](./images/deklarasi.png)
 
 8. Tambahkan kode berikut ini untuk menerima input dari keyboard
 
-  ![input](./images/input-percobaan2.png)
+    ![input](./images/input-percobaan2.png)
 
 9. Buatlah struktur pengecekan kondisi bersarang. Pengecekan pertama digunakan
    untuk mengecek kategori (pekerja atau pebisnis). Selanjutnya dilakukan
@@ -205,7 +207,7 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
    telah dimasukkan. Kemudian tambahkan kode program untuk menghitung gaji
    bersih yang diterima setelah dipotong pajak
 
-   ![Cek nilai](./images/cek-nilai.png)
+   ![Cek nilai](./images/cek-percobaan2.png)
 
 10. Jalankan program tersebut. Amati apa yang terjadi!
 
@@ -244,15 +246,15 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
    pesan yang menyatakan bahwa pengguna berhasil login. Namun, jika password
    salah, maka terdapat pesan yang menyatakan bahwa password salah.
 
-  Catatan:
-    - username: Mahasiswa (MAHAsiswa dianggap sama)
-    - password: RaHaSia (RAHASIA dianggap tidak sama)
+      > Catatan:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          >
+      > username: Mahasiswa (MAHAsiswa dianggap sama)
+      >- password: RaHaSia (RAHASIA dianggap tidak sama)
 
-  Contoh hasil keluaran program:
+   Contoh hasil keluaran program:
 
-  ![tugas2](./images/tugas2-1.png)
-  ![tugas2](./images/tugas2-2.png)
-  ![tugas2](./images/tugas2-3.png)
+   ![tugas2](./images/tugas2-1.png)
+   ![tugas2](./images/tugas2-2.png)
+   ![tugas2](./images/tugas2-3.png)
 
 3. Restoran MakanYUK meminta Anda membuat sebuah program untuk menerima pesanan
   dari internet. Program yang Anda buat meminta pengguna untuk memasukkan nama
@@ -266,10 +268,10 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
   nama makanan yang dibeli + harga, biaya pengiriman, dan total yang harus
   dibayar!
 
-  Contoh hasil keluaran program:
+    Contoh hasil keluaran program:
 
-  ![Tugas3](./images/tugas3-1.png)
-  ![Tugas3](./images/tugas3-2.png)
+    ![Tugas3](./images/tugas3-1.png)
+    ![Tugas3](./images/tugas3-2.png)
 
 4. Perhatikan flowchart berikut ini!
 
