@@ -245,8 +245,8 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
    pesan yang menyatakan bahwa pengguna berhasil login. Namun, jika password
    salah, maka terdapat pesan yang menyatakan bahwa password salah.
 
-      > Catatan:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          >
-      > username: Mahasiswa (MAHAsiswa dianggap sama)
+      >Catatan:
+      >- username: Mahasiswa (MAHAsiswa dianggap sama)
       >- password: RaHaSia (RAHASIA dianggap tidak sama)
 
    Contoh hasil keluaran program:
