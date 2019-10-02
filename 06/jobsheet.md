@@ -218,8 +218,7 @@ diterapkan pada sub-ekspresi akan dievaluasi dari kiri ke kanan.
    ditampilkan?
 2. Jelaskan fungsi dari `(int)` pada sintaks `gajiBersih = (int) (penghasilan -
    (penghasilan * pajak));`
-3. Jalankan program dengan memasukkan `kategori = PEBISNIS` dan penghasilan =
-   2000000. Amati apa yang terjadi! Apa kegunaan dari equalsIgnoreCase?
+3. Jalankan program dengan memasukkan `kategori = PEBISNIS` dan penghasilan = 2000000. Amati apa yang terjadi! Apa kegunaan dari `equalsIgnoreCase`?
 4. Ubah `equalsIgnoreCase` menjadi `equals`, kemudian jalankan program dengan
    memasukkan kategori = PEBISNIS dan penghasilan = 2000000. Amati apa yang
    terjadi! Mengapa hasilnya demikian? Apa kegunaan dari equals?
