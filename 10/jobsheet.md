@@ -107,9 +107,9 @@ for, dan perulangan yang dalam menggunakan while, hal tersebut bisa dilakukan.
 
 ```java
 for(int i=0; i<2; i++)  {
-		for(int j=1; j<=5; j++) {
-        //statement
-    }
+  for(int j=1; j<=5; j++) {
+    //statement
+  }
 }
 ```
 
@@ -123,323 +123,241 @@ for(int i=0; i<2; i++)  {
 
 2.	Buat class baru dengan nama Star dan simpan dalam file `Star.java`
 
-3.	Buat fungsi/method main() di dalamnya.
+3.	Buat fungsi/method `main()` di dalamnya.
 
-4.	Karena program membutuhkan input dari keyboard, maka perlu import class Scanner. Jadi tambahkan sintaks import di baris atas sendiri program.
+4.	Karena program membutuhkan input dari keyboard, maka diperlukan import class
+    Scanner. Jadi tambahkan sintaks import di baris atas sendiri program. Jika
+    IDE/Text editor anda mendukung auto import, tahapan ini tidak diperlukan.
 
+    ```java
+    import java.util.Scanner;
+    ```
 
+5.	Di dalam fungsi `main()` yang telah dibuat, deklarasikan objek Scanner
+    dengan nama sc.
 
-import java.util.Scanner;
-
-
-
-
-
-5.	Di dalam fungsi main() yang telah dibuat, deklarasikan objek Scanner dengan nama sc.
-
-
-
-Scanner sc = new Scanner(System.in);
-
-
-
-
+    ```java
+    Scanner sc = new Scanner(System.in);
+    ```
 
 6.	Pada baris selanjutnya, tampilkan instruksi untuk memasukan nilai yang akan disimpan ke variabel N.
 
+    ```java
+    System.out.print("Masukkan nilai N = ");
 
-
-System.out.print("Masukkan nilai N = ");
-
-int N = sc.nextInt();
-
-
-
-
+    int N = sc.nextInt();
+    ```
 
 7.	Pada baris selanjutnya, buat sintaks perulangan dengan for seperti di bawah ini.
 
+    ```java
+    for(int i=1; i<=N; i++){
 
+      System.out.print("*");
 
-for(int i=1; i<=N; i++){
+    }
+    ```
 
-	System.out.print("*");
+    > Catatan: perlu diperhatikan, bahwa yang digunakan adalah perintah print,
+    > bukan println karena kita ingin menampilkan tanpa ada baris baru
 
-}
-
-
-
-
-
-Catatan: perlu diperhatikan, bahwa yang digunakan adalah perintah print, bukan println karena kita ingin menampilkan tanpa ada baris baru
-
-
-
-8.	Compile dan jalan program!
-
+8.	Compile dan jalankan program!
 9.	Amati hasilnya, maka hasilnya harusnya akan serupa dengan tampilan di bawah ini.
 
+    ```
+    Masukkan Nilai N = 5
 
+    *****
+    ```
 
-asukkan Nilai N = 5
+#### Pertanyaan
 
-*****
+1.	Jika pada perulangan for, inisialisasi `i = 1` diubah menjadi `i = 0`, apa
+    yang akibatnya? Mengapa bisa demikian?
 
+2.	Jika pada perulangan for, kondisi `i <= N` diubah menjadi `i > N`, apa
+    akibatnya?  Mengapa bisa demikian?
 
+3.	Jika pada perulangan for, kondisi step `i++` diubah menjadi `i--` apa
+    akibatnya?  Mengapa bisa demikian?
 
+### Percobaan 2
 
+1.	Pada percobaan ke-2 akan dilakukan percobaan tentang loop bersarang. Kasus
+    yang akan diselesaikan adalah untuk membuat tampilan bujursangkar *, dengan
+    panjang sisi sebanyak N. Misalkan N dimasukan 5, maka hasilnya adalah:
 
-Pertanyaan
+    ```
+    *****
+    *****
+    *****
+    *****
+    *****
+    ```
 
-1.	Jika pada perulangan for, inisialisasi i=1 diubah menjadi i=0, apa yang akibatnya? Mengapa bisa demikian?
+2.	Kalau diamati lebih lanjut, sebenarnya mirip dengan kasus percobaan 1 bukan?
+    Jika di percobaan 1, misal input N bernilai 5, maka yang akan dihasilkan
+    adalah *****, maka untuk kasus percobaan 2 ini bukankah hasil dari percobaan
+    1 tersebut hanya perlu diulang lagi sebanyak N kali ?
 
-2.	Jika pada perulangan for, kondisi i<=N diubah menjadi i>N, apa akibatnya? Mengapa bisa demikian?
+4.	Buatlah class `Square` dan simpan dengan nama file `Square.java`
 
-3.	Jika pada perulangan for, kondisi step i++ diubah menjadi i-- apa akibatnya? Mengapa bisa demikian?
+5.	Karena program membutuhkan input dari keyboard, maka perlu import class
+    Scanner. Jadi tambahkan sintaks import di baris atas sendiri program.
 
-
-
-4.2. Percobaan 2
-
-1.	Pada percobaan ke-2 akan dilakukan percobaan tentang loop bersarang. Kasus yang akan diselesaikan adalah untuk membuat tampilan bujursangkar *, dengan panjang sisi sebanyak N. Misalkan N dimasukan 5, maka hasilnya adalah:
-
-
-
-*****
-
-*****
-
-*****
-
-*****
-
-*****
-
-
-
-2.	Kalau diamati lebih lanjut, sebenarnya mirip dengan kasus percobaan 1 bukan? Jika di percobaan 1, misal input N bernilai 5, maka yang akan dihasilkan adalah *****, maka untuk kasus percobaan 2 ini bukankah hasil dari percobaan 1 tersebut hanya perlu diulang lagi sebanyak N kali ?
-
-4.	Buat class Square dan simpan dengan nama file Square.java
-
-5.	Karena program membutuhkan input dari keyboard, maka perlu import class Scanner. Jadi tambahkan sintaks import di baris atas sendiri program.
-
-
-
-import java.util.Scanner;
-
-
+    ```java
+    import java.util.Scanner;
+    ```
 
 6.	Buat method main(), dan isikan kode program yang sama dengan isi method main() di percobaan 1.
 
+    ```java
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Masukkan nilai N = ");
+    int N = sc.nextInt();
 
+    for(int i=1; i<=N; i++){
+      System.out.print("*");
+    }
+    ```
 
-Scanner sc = new Scanner(System.in);
+7.	Compile dan jalankan program! Dan pastikan program jalan seperti saat
+    percobaan 1.
 
-System.out.print("Masukkan nilai N = ");
+8.	Perhatikan sintaks perulangan yang digunakan untuk mencetak * sebanyak N
+    kali ke arah samping. Di step-6 di atas, perulangan tersebut diberi tanda
+    kotak merah. Perulangan tersebut, harus diulang sebanyak N kali. Jadi perlu
+    ditambahkan perulangan luar (outer loop).
 
-int N = sc.nextInt();
-
-for(int i=1; i<=N; i++){
-
-	System.out.print("*");
-
-}
-
-
-
-7.	Compile dan jalankan program!Dan pastikan program jalan seperti saat percobaan 1.
-
-8.	Perhatikan sintaks perulangan yang digunakan untuk mencetak * sebanyak N kali ke arah samping. Di step-6 di atas, perulangan tersebut diberi tanda kotak merah. Perulangan tersebut, harus diulang sebanyak N kali. Jadi perlu ditambahkan perulangan luar (outer loop).
-
-for(int iOuter=1; iOuter<=N; iOuter++){
-
-for(int i=1; i<=N; i++){
-
-		System.out.print("*");
-
-}
-
-System.out.println();
-
-}
+    ```java
+    for(int iOuter = 1; iOuter <= N; iOuter++){
+      for(int i = 1; i <= N; i++){
+          System.out.print("*");
+      }
+      System.out.println();
+    }
+    ```
 
 9.	Simpan perubahan, compile dan jalankan program!
 
 10.	Amati hasilnya, maka hasilnya harusnya akan serupa dengan tampilan di bawah ini.
 
+    ```
+    Masukkan Nilai N = 5
+
+    *****
+    *****
+    *****
+    *****
+    *****
+    ```
+
+#### Pertanyaan
+
+1.	Perhatikan perulangan luar. Jika pada sintaks for, inisialisasi iOuter=1
+    diubah menjadi iOuter=0, apa yang akibatnya? Mengapa bisa demikian?
+2.	Kembalikan program semula dimana inisialisasi iOuter=1. Kemudian perhatikan
+    perulangan dalam, Jika pada sintaks for, inisialisasi i=1 diubah menjadi
+    i=0, apa yang akibatnya? Mengapa bisa demikian?
+3.	Jadi, apakah perbedaan kegunaan antara perulangan luar dengan perulangan
+    yang berada didalamnya?
+4.	Mengapa perlu ditambahkan sintaks `System.out.println();` di bawah perulangan
+    dalam? Apa akibatnya jika sintaks tersebut dihilangkan?
+5.	Modifikasi program sehingga hasil output menjadi seperti di bawah ini jika
+    misal N dimasukan 5
 
 
-asukkan Nilai N = 5
+    ```
+    *
+    **
+    ***
+    ****
+    *****
+    ```
 
-*****
-
-*****
-
-*****
-
-*****
-
-*****
-
-
-
-
-
-Pertanyaan
-
-1.	Perhatikan perulangan luar. Jika pada sintaks for, inisialisasi iOuter=1 diubah menjadi iOuter=0, apa yang akibatnya? Mengapa bisa demikian?
-
-2.	Kembalikan program semula dimana inisialisasi iOuter=1. Kemudian perhatikan perulangan dalam, Jika pada sintaks for, inisialisasi i=1 diubah menjadi i=0, apa yang akibatnya? Mengapa bisa demikian?
-
-3.	Jadi, apakah perbedaan kegunaan antara perulangan luar dengan perulangan yang berada didalamnya?
-
-4.	Mengapa perlu ditambahkan sintaks System.out.println(); di bawah perulangan dalam? Apa akibatnya jika sintaks tersebut dihilangkan?
-
-5.	Modifikasi program sehingga hasil output menjadi seperti di bawah ini jika misal N dimasukan 5
-
-
-
-*
-
-**
-
-***
-
-****
-
-*****
-
-
-
-
-
-4.3. Percobaan 3
+#### Percobaan 3
 
 1.	Buat class baru dengan nama Quiz dan simpan dengan nama file Quiz.java.
-
 2.	Import class Random dan Scanner, di baris awal program.
 
+    ```java
+    import java.util.Scanner;
+    import java.util.Random;
+    ```
 
+3.	Buatlah fungsi `main()`
+4.	Di dalam fungsi `main()` deklarasikan objek dari class Random dan Scanner.
+    Class Random, pada kasus ini digunakan untuk mengaccak angka.
 
-import java.util.Scanner;
-
-import java.util.Random;
-
-
-
-3.	Buat fungsi main()
-
-4.	Di dalam fungsi main() deklarasikan objek dari class Random dan Scanner. Class Random, pada kasus ini digunakan untuk mengaccak angka.
-
-
-
-Random random = new Random();
-
-Scanner input = new Scanner(System.in);
-
-
-
-
+    ```java
+    Random random = new Random();
+    Scanner input = new Scanner(System.in);
+    ```
 
 5.	Kemudian pada baris selanjutnya, tambahkan sintaks seperti di bawah ini.
 
+    ```java
+    char menu = 'y';
+    do {
+      int number = random.nextInt(10) + 1;
+      boolean success = false;
+      do{
+        System.out.print("Tebak angka (1-10): ");
+        int answer = input.nextInt();
+        input.nextLine();
+        success = (answer == number);
+      } while(!success);
+      System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?");
+      menu = input.findInLine(".").charAt(0);
+      input.nextLine();
+    } while(menu == 'y' || menu == 'Y');
+    ```
 
-
-char menu='y';
-
-do{
-
-	int number=random.nextInt(10)+1;
-
-	boolean success=false;
-
-	do{
-
-		System.out.print("Tebak angka (1-10): ");
-
-		int answer = input.nextInt();
-
-		input.nextLine();
-
-		success=(answer==number);
-
-	}while(!success);
-
-	System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?");
-
-	menu=input.findInLine(".").charAt(0);
-
-	input.nextLine();
-
-}while(menu=='y' || menu=='Y');
-
-
-
-
-
-Catatan: Statement input.nextLine() pada potongan kode di atas, digunakan untuk mengabaikan karakter new line
-
-
+    > **Catatan**: Statement input.nextLine() pada potongan kode di atas, digunakan
+    > untuk mengabaikan karakter new line
 
 6.	Compile dan jalankan program.
-
 7.	Amati jalannya alur program tersebut.
 
-
-
-Pertanyaan
+#### Pertanyaan
 
 1.	Jelaskan alur program di atas!
+2.	Modifikasi program di atas, sehingga bisa menampilkan informasi, jika
+    tebakan yang dimasukan oleh user lebih kecil atau lebih besar dari jawaban
+    yang benar!
 
-2.	Modifikasi program di atas, sehingga bisa menampilkan informasi, jika tebakan yang dimasukan oleh user lebih kecil atau lebih besar dari jawaban yang benar!
+### Tugas
 
+1.	(NumberTriangle) Buatlah program untuk  mencetak tampilan segitiga angka
+    seperti di bawah ini (jumlah baris 2 dan 4) berdasarkan input jumlah baris!
+    Dimana jumlah baris minimal 1.
 
+    ![number-triangle](./images/number-triangle.png)
 
-5. Tugas
+2.	(HourGlass) Buatlah program untuk mencetak tampilan seperti di bawah ini
+    (jumlah N =2 dan 4) berdasarkan input N! Dimana jumlah N minimal 2.
 
-1.	(NumberTriangle) Buatlah program untuk  mencetak tampilan segitiga angka seperti di bawah ini (jumlah baris 2 dan 4) berdasarkan input jumlah baris! Dimana jumlah baris minimal 1.
+    ![hourgrlass](./images/hourglass.png)
 
+3.	(NumberSquare) Buatlah program untuk mencetak tampilan seperti di bawah ini
+    (jumlah baris 3 dan 5) berdasarkan input jumlah baris! Dimana Jumlah baris
+    minimal 3.
 
+    ![numbersquare](./images/number-square.png)
 
+4.	(OppositeNumber) Buatlah program untuk mencetak tampilan seperti di bawah
+    ini (jumlah baris 3 dan 6) berdasarkan input jumlah baris! Dimana Jumlah
+    baris minimal 2.
 
+    ![opposite number](./images/opposite-number.png)
 
+5.	(PineTree)  Buatlah program untuk mencetak tampilan seperti di bawah ini
+    (contoh jumlah N 2 dan 3) berdasarkan input jumlah N! Dimana Jumlah baris
+    minimal 2.
 
+    ![pine tree](./images/pinetree.png)
 
-2.	(HourGlass) Buatlah program untuk mencetak tampilan seperti di bawah ini (jumlah N =2 dan 4) berdasarkan input N! Dimana jumlah N minimal 2.
+6.	(PrimeNumber) Tampilkan bilangan prima sejumlan N bilangan yang dimasukkan!
+    Dimana nilai N minimal 1.
 
-
-
-
-
-
-
-3.	(NumberSquare) Buatlah program untuk mencetak tampilan seperti di bawah ini (jumlah baris 3 dan 5) berdasarkan input jumlah baris! Dimana Jumlah baris minimal 3.
-
-
-
-
-
-
-
-4.	(OppositeNumber) Buatlah program untuk mencetak tampilan seperti di bawah ini (jumlah baris 3 dan 6) berdasarkan input jumlah baris! Dimana Jumlah baris minimal 2.
-
-
-
-
-
-
-
-5.	(PineTree)  Buatlah program untuk mencetak tampilan seperti di bawah ini (contoh jumlah N 2 dan 3) berdasarkan input jumlah N! Dimana Jumlah baris minimal 2.
-
-
-
-
-
-
-
-6.	(PrimeNumber) Tampilkan bilangan prima sejumlan N bilangan yang dimasukkan! Dimana nilai N minimal 1.
-
-
-
-
-
+    ![primenumber](./images/prime-number.png)
