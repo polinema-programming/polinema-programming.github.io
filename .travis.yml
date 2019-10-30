@@ -24,6 +24,5 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: _book
-  fqdn: programming.dhanifudin.com
   on:
     branch: master
