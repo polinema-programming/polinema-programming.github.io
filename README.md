@@ -1,4 +1,4 @@
-# Modul Dasar Pemrograman [![Build Status](https://travis-ci.com/polinema-programming/polinema-programming.github.io.svg?branch=master)](https://travis-ci.com/polinema/polinema-programming.github.io)
+# Modul Dasar Pemrograman [![Build Status](https://travis-ci.com/polinema-programming/polinema-programming.github.io.svg?branch=master)](https://travis-ci.com/polinema-programming/polinema-programming.github.io)
 
 Modul ini merupakan josheet yang digunakan untuk membantu proses belajar di
 dalam laboratorium oleh mahasiswa Politeknik Negeri Malang.
