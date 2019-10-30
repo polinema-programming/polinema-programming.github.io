@@ -11,3 +11,4 @@
 - [7. Mini Project]()
 - [8. UTS]()
 - [9. Sintaks Perulangan 1](09/jobsheet.md)
+- [10. Sintaks Perulangan 2](10/jobsheet.md)
