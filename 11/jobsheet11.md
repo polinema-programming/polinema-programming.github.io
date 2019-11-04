@@ -16,8 +16,8 @@ Array adalah sekumpulan tempat penyimpanan data yang bertipe sama dan memiliki i
 sekumpulan variabel yang bertipe sama dan bernama sama. Array biasanya digunakan untuk menyimpan deret angka. Kemudian 
 untuk membedakan nilai/isi dari variabel tersebut, digunakan index.
 Ada dua tipe array:
-•	Array satu dimensi
-•	Array multi dimensi
+- Array satu dimensi
+- Array multi dimensi
 
 Pada jobsheet praktikum ini hanya akan dibahas array satu dimensi saja. Array multi dimensi akan dibahas di jobsheet 
 selanjutnya.
@@ -58,133 +58,315 @@ diikuti dengan index yang dituju didalam tanda kurung kotak [ ].
 Contoh program berikut ini membuat array bernama bil, bertipe integer, jumlah elemen 4, kemudian mengisinya dengan 
 beberapa nilai, kemudian menampilkan isi elemennya ke layar.
 
-<figure style="text-align: center">
+<figure style="text-align: left">
           <img src="images/10-03.png" alt="Array satu dimensi"/>
-          <figcaption style="text-align: center; font-weight: bold">Contoh kode Array satu dimensi</figcaption>
       </figure>
-
-Hasil
-
-<figure style="text-align: center">
+<figure style="text-align: left">
           <img src="images/10-04.png" alt="Hasil"/>
-          <figcaption style="text-align: center; font-weight: bold">Hasil</figcaption>
       </figure>
 
 Ada beberapa alternatif cara untuk mendeklarasikan array.
 1.	Deklarasi array tanpa mengalokasikan jumlah elemennya:
+
+    `int[] myArray;`
+    
 2.	Deklarasi array dengan mengalokasikan 10 elemen:
+
+    `int[] myArray = new int[10];`
+    
 3.  Mengubah jumlah elemen array dengan 50: 
+
+    `myArray = new int[50];`
+    
 4.	Deklarasi array dan mengisinya secara langsung:
+    ```java
+    int[] myArray = {10, 20, 30, 40};
+    String[] myArray2 = {"Malang", "Surabaya"};
+    ```
 5.	Mengetahui jumlah elemen array: 
 
-## Langkah Praktikum
-1. Tulis ulang program untuk melakukan perulangan sebagai berikut :
-    -   Perulangan dengan `for`
-      <figure style="text-align: center">
-              <img src="images/09-01.png" alt="Perulangan dengan for"/>
-          </figure>
-          
-    -   Perulangan dengan `while`
-    <figure style="text-align: center">
-                  <img src="images/09-02.png" alt="Perulangan dengan for"/>
-              </figure>
-              
-    -   Perulangan dengan `do-while`
-    <figure style="text-align: center">
-                  <img src="images/09-03.png" alt="Perulangan dengan for"/>
-              </figure>
-2. Cocokkan hasil running program yang sudah Anda buat apakah sudah sesuai dengan tampilan berikut ini?
-    <figure style="text-align: center">
-                      <img src="images/09-04.png" alt="Perulangan dengan for"/>
-                  </figure>
-3.	Salinlah program perulangan dengan menggunakan break berikut :
-        -   Perulangan dengan `for`
-          <figure style="text-align: center">
-                  <img src="images/09-05.png" alt="Perulangan dengan for"/>
-              </figure>
-              
-        -   Perulangan dengan `while`
-        <figure style="text-align: center">
-                      <img src="images/09-06.png" alt="Perulangan dengan for"/>
-                  </figure>
-                  
-        -   Perulangan dengan `do-while`
-        <figure style="text-align: center">
-                      <img src="images/09-07.png" alt="Perulangan dengan for"/>
-                  </figure>
-4.	Cocokkan hasil running program looping menggunakan break yang sudah Anda buat apakah sudah sesuai dengan tampilan berikut ini?
-    <figure style="text-align: center">
-                          <img src="images/09-08.png" alt="Perulangan dengan for"/>
-                      </figure>
-5. Salinlah program perulangan dengan menggunakan continue berikut :
-    <figure style="text-align: center">
-                              <img src="images/09-09.png" alt="Perulangan dengan for"/>
-                          </figure>
-6.	Cocokkan hasil running program looping menggunakan continue yang sudah Anda buat apakah sudah sesuai dengan tampilan berikut ini?
-    <figure style="text-align: center">
-                              <img src="images/09-10.png" alt="Perulangan dengan for"/>
-                          </figure>
-                          
-### Pertanyaan
-1.	Misalkan, Anda diminta membuat sebuah program Java yang meminta masukan sebuah bilangan bulat n. Kemudian, program menampilkan karakter '*' di layar sebanyak n kali. Manakah di antara kedua potongan program di bawah ini yang lebih baik dan aman ? mengapa ?
-    
-      <figure style="text-align: center">
-                                  <img src="images/09-11.png" alt="Perulangan dengan for"/>
-                              </figure>
-2.	Apakah output dari ketiga potongan program di bawah ini:
+    `myArray.length;`
 
+### Menggunakan Perulangan Pada Array Satu Dimensi
+Untuk mengakses (mengisi/membaca) nilai dari sebuah array, kita dapat menggunakan perulangan.
+
+<figure style="text-align: left">
+          <img src="images/10-05.png" alt="Mengakses array"/>
+      </figure>
+      Hasil
+   <figure style="text-align: left">
+                <img src="images/10-06.png" alt="Hasil"/>
+            </figure>
+
+Kita juga bisa menggunakan perulangan untuk menerima input dan menyimpannya kedalam array. Contoh, program yang meminta 
+input sebanyak 5 bilangan kemudian menampilkan kembali 5 bilangan tersebut.
+
+<figure style="text-align: left">
+          <img src="images/10-07.png" alt="Input array"/>
+      </figure>
+      
+   <figure style="text-align: left">
+                <img src="images/10-08.png" alt="Hasil"/>
+            </figure>
+
+### Input Jumlah Elemen Array
+Kita juga dapat membuat program yang meminta input berapa banyak jumlah elemen array.
+Langkahnya secara umum adalah:
+
+1. Deklarasikan array tanpa mengalokasikan jumlah elemennya.
+2. Buat input yang menerima jumlah elemen array kemudian simpan di sebuah variabel.
+3. Set jumlah elemen array menggunakan variabel yang diinputkan tadi.
+Coba amati program berikut ini:
+
+<figure style="text-align: left">
+          <img src="images/10-09.png" alt="Input array"/>
+      </figure>
+      
+   <figure style="text-align: left">
+                <img src="images/10-10.png" alt="Hasil"/>
+            </figure>
+
+## Langkah Praktikum
+Ikuti langkah-langkah praktikum berikut ini.
+### Praktikum 1
+1. Buat class baru dengan nama `MyArray.java`
+2. Buat array bertipe integer dengan nama bil dengan kapasitas 4 elemen.
+
+   `int[] bil = new int[4]`
+
+3. Isi masing-masing elemen array bil tadi dengan angka 5, 12, 7, 20.
+    ```java
+    bil[0]=5;
+    bil[1]=12;
+    bil[2]=7;
+    bil[3]=20;
+    ```
+4. Tampilkan ke layar semua isi elemennya:
+    ```java
+    System.out.println(bil[0]);
+    System.out.println(bil[1]);
+    System.out.println(bil[2]);
+    System.out.println(bil[3]);
+    ```
+5. Cocokkan dan amati hasilnya dengan gambar berikut ini:
+<figure style="text-align: left">
+          <img src="images/10-11.png" alt="Output array"/>
+      </figure>  
+      
+#### Pertanyaan
+1. Dari percobaan 1 berapakah indeks array terbesar dan terkecil?
+2. Jika Isi masing-masing elemen array bil diubah dengan angka 5.0, 12867, 7.5, 2000000. Apa yang terjadi? 
+Mengapa bisa demikian?
+3. Ubah statement pada langkah No 4 menjadi seperti berikut 
+    ```java
+    for(int i=0; i<4; i++){
+        System.out.println(bil[i]);
+    }
+    ```
+    Apa keluaran dari program? Mengapa bisa demikian?
+    
+### Praktikum 2
+1. Buat file baru beri nama `ArrayInputLoop.java`
+2. Import dan deklarasikan Scanner untuk keperluan input. 
+
+    `Scanner sc = new Scanner(System.in)`
+
+3. Buat array bertipe integer dengan nama `nilaiUAS`, dengan kapasitas 6 elemen. 
+
+    `int nilaiUAS[] = new int[6]`
+
+4. Menggunakan perulangan, buat input untuk mengisi elemen dari array `nilaiUAS`.
+    ```java
+        for(int i=0; i<6; i++){
+            System.out.print("Masukan nilai UAS ke-"+i+": ");
+            nilaiUAS[i]=sc.nextInt();
+        }
+       ```
+5. Menggunakan perulangan, tampilkan semua isi elemen dari array `nilaiUAS`.
+    ```java
+        for(int i=0; i<6; i++){
+            System.out.println("Nilai UAS ke-"+i+" adalah "+nilaiUAS[i]);
+        }
+       ```
+6. Cocokkan dan amati hasilnya dengan gambar berikut ini:
+<figure style="text-align: left">
+          <img src="images/10-12.png" alt="Output array"/>
+      </figure>
+      
+#### Pertanyaan
+1. Ubah statement pada langkah No 4 menjadi seperti berikut ini :
+    ```java
+        for(int i=0; i<nilaiUAS.length; i++){
+            System.out.print("Masukan nilai UAS ke-"+i+": ");
+            nilaiUAS[i]=sc.nextInt();
+        }
+       ```
+Jalankan program, Apakah terjadi perubahan? Mengapa demikian?
+2. Apa kegunaan dari `nilaiUAS.length` ? 
+3. Ubah statement pada langkah No 5 menjadi seperti berikut ini, sehingga program hanya menampilkan nilai Mahasiswa 
+yang lulus saja :
+    ```java
+        for(int i=0; i<nilaiUAS.length; i++){
+            if(nilaiUAS[i] > 70){
+                System.out.println("Mahasiswa ke-"+i+" lulus");
+            }   
+        }
+   ```
+Jalankan program dan Jelaskan alur program!
+4. Modifikasi program agar menampilkan semua mahasiswa, dan ditandai mana yang lulus dan tidak lulus.
+<figure style="text-align: left">
+          <img src="images/10-13.png" alt="Output array"/>
+      </figure>
+      
+### Praktikum 3
+Pada praktikum ini, akan dilakukan percobaan untuk menjumlahkan Array. Program akan menerima input sebanyak 10 nilai 
+mahasiswa. Kemudian program akan menampilkan nilai rata-rata dari dari 10 Mahasiswa.
+1. Buat class baru beri nama `rataNilai`.
+2. Import dan deklarasikan `Scanner` untuk keperluan input. 
+
+    `Scanner sc = new Scanner(System.in)`
+
+3. Buat array nilaiMHS bertipe integer dengan kapasitas 10. Kemudian deklarisakan variable total dan rata seperti 
+gambar berikut ini
+    ```java
+    int[] nilaiMHS = new int[10];
+    int total = 0;
+    double rata;
+    ```
+4. Menggunakan perulangan, buat input untuk mengisi array `nilaiMHS`
+    ```java
+        for(int i=0; i<nilaiMHS.length; i++){
+            System.out.print("Masukkan nilai mahasiswa ke-"+(i+1)+": ");
+            nilaiMHS[i]=sc.nextInt();
+        }
+       ```
+5. Menggunakan perulangan untuk menghitung jumlah keseluruhan nilai.
+    ```java
+        for(int i=0; i<nilaiMHS.length; i++){
+            total+=nilaiMHS[i];
+        }
+       ```
+6.	Kemudian hitung nilai rata-rata dengan cara nilai total dibagi jumlah elemen dari array `nilaiMHS`
+    ```java
+    rata = total/nilaiMHS.length;
+    System.out.println(rata);
+    ```
+7. Amati hasilnya
+<figure style="text-align: left">
+          <img src="images/10-14.png" alt="Output array"/>
+      </figure>
+      
+#### Pertanyaan
+1. Pada praktikum 4 no 6. Mengapa perhitungan rata berada diluar perulangan?
+2. Modifikasi program pada praktikum 4 sehingga bisa mengeluarkan output seperti gambar berikut ini
+<figure style="text-align: left">
+          <img src="images/10-15.png" alt="Output array"/>
+      </figure>
+
+## Tugas
+Kerjakan tugas sesuai dengan instruksi berikut ini.
+1. Buatlah program yang terdapat array dengan jumlah elemen 5, buatlah input untuk mengisi elemen array tersebut, 
+kemudian tampilkan isi array tersebut dengan urutan terbalik. Seperti ilustrasi gambar dibawah ini.
+<figure style="text-align: center">
+          <img src="images/10-16.png" alt="Output array"/>
+      </figure>
       <figure style="text-align: center">
-                              <img src="images/09-12.png" alt="Perulangan dengan for"/>
-                          </figure>
-3.	Salinlah program perulangan berikut, dan cocokkan hasil running program apakah sesuai dengan hasil di bawah ini
-    
-        <figure style="text-align: center">
-                                  <img src="images/09-13.png" alt="Perulangan dengan for"/>
-                              </figure>
-                              
-       - Kembangkan program tersebut sehingga mampu untuk menampilkan output sebagai berikut
-            
+                <img src="images/10-17.png" alt="Output array"/>
+            </figure>
+2. Buatlah program yang menerima input jumlah elemen array, inputkan isi arraynya, kemudian tampilkan mana yang genap 
+dan mana yang ganjil. Contoh hasil program:
+<figure style="text-align: left">
+                <img src="images/10-18.png" alt="Output array"/>
+            </figure>
+3. Dengan menggunakan konsep Array, Buatlah program untuk menghitung Nilai IP Semester berdasarkan Matakuliah yang 
+Anda Ambil semester ini. Program meminta pengguna untuk memasukkan jumlah matakuliah yang diambil pada semester ini, 
+selanjutnya program tersebut meminta pengguna untuk memasukkan nama matakuliah, bobot SKS masing-masing matakuliah, 
+dan Nilai dari masing-masing matakuliah.
+Contoh hasil program:
+<figure style="text-align: left">
+                <img src="images/10-19.png" alt="Output array"/>
+            </figure>
+<figure style="text-align: left">
+                <img src="images/10-20.png" alt="Hasil"/>
+            </figure>
+            Catatan : konversi nilai yang digunakan sesuai dengan peraturan polinema
             <figure style="text-align: center">
-                                          <img src="images/09-14.png" alt="Perulangan dengan for"/>
-                                      </figure>
-                                     
-### Tugas
-1.	**(SumAvgGenap)** Buatlah program dengan menggunakan bahasa Java yang meminta masukan _user_ sebuah bilangan bulat **N (N > 0)**. Program kemudian menampilkan penjumlahan **N bilangan genap positif pertama (bilangan genap ≥ 0)**.
-   
-        Contoh: 
-       - Jika user memasukkan N = 10, program akan menghitung banyaknya jumlah bilangan positive di dalam range bilangan 1-10   kemudian menampilkan penjumlahan bilangan positive bilangan bilangan diantara 1-10 yaitu : 
-            0 + 2 + 4 + 6 + 10 = 30. 
+                            <img src="images/10-21.png" alt="Output array"/>
+                        </figure>
+4. Buatlah program untuk menghapus elemen tertentu pada sebuah Array
+5. **(ArrayMax)** Buatlah program yang menerima input jumlah elemen array, inputkan isi arraynya, kemudian tampilkan 
+bilangan terbesar dari isi elemen arraynya. Contoh hasil program:
+
+    ```xml
+    Masukkan isi array: 4
+     Masukkan array ke-0: 25
+     Masukkan array ke-1: 10
+     Masukkan array ke-2: 55
+     Masukkan array ke-0: 15 
+     Bilangan terbesar: 55
+    ```
+
+## Materi Pengayaan
+### Pencarian Pada Array
+Salah satu hal yang sering dilakukan pada operasi array adalah pencarian atau searching. Pencarian dilakukan untuk 
+menemukan nilai tertentu pada elemen didalam array. Ada banyak algoritma searching, namun yang paling mudah adalah 
+Linear Search.
+
+Misalkan pada sebuah array, kita ingin mencari dimana posisi index dari sebuah array. Pada Linear Search, kita 
+membandingkan “key” atau angka yang ingin kita cari, dengan tiap elemen yang ada didalam array. Amati gambar berikut:
+<figure style="text-align: center">
+                <img src="images/10-22.png" alt="Linier search"/>
+                <figcaption style="text-align: center; font-weight: bold">Linier search</figcaption>
+            </figure>
+Pada gambar diatas, key atau angka yang ingin kita cari adalah 3. Menggunakan looping kita bandingkan masing-masing 
+elemen dari array. Dan ternyata angka 3 berada di index ke 5. Maka setelah ketemu, looping akan berhenti, dan hasil 
+akhir dari program adalah 5 (index dimana angka 3 berada). Amati contoh program berikut:
+<figure style="text-align: left">
+                <img src="images/10-23.png" alt="Output array"/>
+            </figure>
+<figure style="text-align: left">
+                <img src="images/10-24.png" alt="Hasil"/>
+                <figcaption style="text-align: center; font-weight: bold">Hasilnya</figcaption>
+            </figure>
             
-            Setelah itu program akan menampilkan rata-rata dari bilangan positive yang telah dijumlahkan tadi.
-       - Contoh output program
-       
-            <figure style="text-align: center">
-                <img src="images/09-15.png" alt="Perulangan dengan for"/>
-             </figure>
-             
-         Silakan Anda rancang sendiri untuk tampilan programnya
-    
-2. **(SumKGanjil)** Buatlah program dengan menggunakan bahasa Java yang meminta masukan user sebuah bilangan bulat **N (N > 0)**. Program kemudian menampilkan penjumlahan **N bilangan ganjil positif pertama (bilangan genap ≥ 0)**.
-    
-    Contoh: 
-    
-    - Jika user memasukkan N = 5, program akan menghitung banyaknya jumlah bilangan positive di dalam range bilangan 1-5   kemudian menampilkan penjumlahan kuadrat bilangan ganjil diantara 1-5 yaitu : 
-    1<sup>2</sup> + 3<sup>2</sup> + 5<sup>2</sup> = 35. 
-    Setelah itu program akan menampilkan rata-rata dari jumlah kuadrat bilangan negatif tersebut.
-    - Contoh output program
-    
-        <figure style="text-align: center">
-                                                      <img src="images/09-16.png" alt="Perulangan dengan for"/>
-                                                  </figure>
-                                                  
-3.	**(Fibonacci)** Buatlah sebuah program yang menampilkan deret bilangan sebagai berikut
-    <figure style="text-align: center">
-                                                          <img src="images/09-17.png" alt="Perulangan dengan for"/>
-                                                      </figure>
-    
-        Dimana bilangan yang terletak di sebelah kiri adalah hasil penambahan dari bilangan di atasnya sebagai contoh
-        ```java
-        0+1 = 1
-        1+1 = 2
-        2+1 = 3
-        ```     
+### Sorting
+Sorting adalah proses mengurutkan elemen array dari yang terkecil ke besar (ascending) atau sebaliknya (descending). 
+Ada banyak algoritma untuk pengurutan, namun yang paling mudah adalah Bubble Sort.
+
+Didalam Bubble Sort, dilakukan looping dari elemen pertama sampai elemen terakhir dari array. Kemudian tiap elemen 
+dibandingkan dengan elemen berikutnya. Jika elemen tersebut lebih besar dari elemen berikutnya, maka akan ditukar. 
+Amati ilustrasi berikut ini:
+<figure style="text-align: center">
+                <img src="images/10-25.png" alt="Bubble sort"/>
+                <figcaption style="text-align: left; font-weight: bold">Bubble sort</figcaption>
+            </figure>
+Berikut adalah contoh program Bubble Sort:
+<figure style="text-align: left">
+                <img src="images/10-26.png" alt="Output array"/>
+            </figure>
+<figure style="text-align: left">
+                <img src="images/10-27.png" alt="Hasil"/>
+                <figcaption style="text-align: left; font-weight: bold">Hasilnya</figcaption>
+            </figure>
+
+## Tugas Pengayaan
+Kerjakan tugas sesuai dengan instruksi berikut ini.
+1. Buatlah program yang menerima input jumlah array, isi array, key yang ingin dicari. Cetak ke layar index posisi 
+elemen dari key yang ingin dicari. Contoh hasil program:
+    ```xml
+    Masukkan jumlah elemen array: 4
+    Array ke 0: 5
+    Array ke 1: 12
+    Array ke 2: 25
+    Array ke 3: 10
+    Masukkan key yang ingin dicari: 12
+    Key ada di posisi index ke: 1
+    ```
+2. Buatlah program yang menerima input jumlah array, isi array, kemudian urutkan array tersebut, kemudian tampilkan ke 
+layar hasil pengurutannya. Contoh hasil program:
+    ```xml
+    Masukkan jumlah elemen array: 4
+    Array ke 0: 5
+    Array ke 1: 12
+    Array ke 2: 
+    ```
