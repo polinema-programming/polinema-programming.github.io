@@ -326,7 +326,7 @@ akhir dari program adalah 5 (index dimana angka 3 berada). Amati contoh program 
             </figure>
 <figure style="text-align: left">
                 <img src="images/10-24.png" alt="Hasil"/>
-                <figcaption style="text-align: center; font-weight: bold">Hasilnya</figcaption>
+                <figcaption style="text-align: left; font-weight: bold">Hasilnya</figcaption>
             </figure>
             
 ### Sorting
@@ -338,7 +338,7 @@ dibandingkan dengan elemen berikutnya. Jika elemen tersebut lebih besar dari ele
 Amati ilustrasi berikut ini:
 <figure style="text-align: center">
                 <img src="images/10-25.png" alt="Bubble sort"/>
-                <figcaption style="text-align: left; font-weight: bold">Bubble sort</figcaption>
+                <figcaption style="text-align: center; font-weight: bold">Bubble sort</figcaption>
             </figure>
 Berikut adalah contoh program Bubble Sort:
 <figure style="text-align: left">
