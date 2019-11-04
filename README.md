@@ -1,7 +1,7 @@
-# Modul Dasar Pemrograman [![Build Status](https://travis-ci.com/dhanifudin/programming.svg?branch=master)](https://travis-ci.com/dhanifudin/programming)
+# Modul Dasar Pemrograman [![Build Status](https://travis-ci.com/polinema-programming/polinema-programming.github.io.svg?branch=master)](https://travis-ci.com/polinema-programming/polinema-programming.github.io)
 
-Modul ini merupakan josheet yang digunakan untuk membantu proses belajar di
-dalam laboratorium oleh mahasiswa Politeknik Negeri Malang.
+Modul ini merupakan jobsheet yang digunakan untuk membantu proses belajar
+praktikum di dalam laboratorium oleh mahasiswa Politeknik Negeri Malang.
 
 ## Dosen Pengampu Praktikum
 
