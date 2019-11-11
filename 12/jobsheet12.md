@@ -25,13 +25,13 @@ tersebut terdapat informasi nim, nama, tanggal kunjungan, dan tanda tangan.
 penonton, sedangkan pada bagian kolomnya adalah daftar judul film yang akan dilakukan rating. Visualisasi dapat dilihat
 pada tabel di bawah ini
 
-    |     | judul_0 | judul_1 | judul_2 |
-    | --- |---      | ---     | ---     |
-    | 0   | 4       | 4       | 3       |
-    | 1   | 2       | 4       | 3       |
-    | 2   | 4       | 4       | 3       |
-    | 3   | 1       | 2       | 2       |
-    | 4   | 4       | 4       | 4       |
+|     | judul_0 | judul_1 | judul_2 |
+| --- | ---     | ---     | ---     |
+| 0   | 4       | 4       | 3       |
+| 1   | 2       | 4       | 3       |
+| 2   | 4       | 4       | 3       |
+| 3   | 1       | 2       | 2       |
+| 4   | 4       | 4       | 4       |
 
 Tabel di atas menggambarkan bahwa setiap view akan melakukan rating terhadap 3 judul film, misalkan pada baris pertama
 melakukan rating pada `judul_0=4, judul_1=4, dan judul_2=3`.
@@ -86,11 +86,15 @@ Array yang pertama pada `variabel a` kolomnya semua sama antar baris, sedangkan 
 berbeda. Dalam array 2 multidimensi hal tersebut diperbolehkan. Ketika divisualisasikan ke dalam sebuah tabel seperti di
 bawah ini
 
+Visualisasi untuk `array a`
+
    |     | 0 | 1 | 2 | 3 |
    | --- |---|---|---|---|
    | 0   | 1[0,0] | 2[0,1] | 3[0,2] | 4[0,3] |    
    | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
    | 2   | 7[2,0] | 8[2,1] | 9[2,2] | 6[2,3] |
+   
+Visualisasi untuk `array b`
    
    |     | 0 | 1 | 2 | 3 |
    | --- |---|---|---|---|
@@ -98,7 +102,21 @@ bawah ini
    | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
    | 2   | 7[2,0] | 8[2,1] | 9[2,2] |  |
 
-### Input Jumlah Elemen Array
+#### Ukuran Baris dan Kolom Array 2 Dimensi
+Seriap array baik array 1 dimensi ataupun array 2 dimensi memiliki ukuran, jika pada array 2 dimensi berarti ukuran pada
+baris atau kolom. Untuk mengetahui ukuran atau length, bisa menggunakan attribut `length` pada array. Cara penggunaannya
+adalah sebagai berikut
+```java
+int[][] a = new int[3][4];
+```
+Ketika dipanggil `a.length` maka hasilnya adalah 3(jumlah baris), sedangkan ketika dipanggil `a[0].length` hasilnya 
+4(jumlah kolom)
+
+>Ketika menggunakan attribut length tentunya akan sangat menguntungkan, baik ketika akan menginputkan element atau
+>menampilkan element menggunakan looping atau perulangan pada saat perubahan jumlah baris atau kolom. Kita tidak perlu
+> mengubah kode yang ada di dalam looping untuk ukuran baris dan kolomnya.
+
+### Array Tiga Dimensi
 
 ## Langkah Praktikum
 Ikuti langkah-langkah praktikum berikut ini.
