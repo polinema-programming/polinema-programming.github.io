@@ -1,9 +1,8 @@
 #  Array Multidimensi
 
 ## Tujuan
-1.	Mahasiswa mampu memahami konsep array multidimensi
-1.	Mahasiswa mampu memberikan contoh penggunaan array multidimensi
-2.	Mahasiswa mampu membuat program menggunakan konsep array multidimensi
+1.	Mahasiswa mampu memahami konsep array 2 dimensi
+2.	Mahasiswa mampu membuat program dengan menggunakan konsep array multidimensi.
 
 
 ## Alat dan Bahan
@@ -13,119 +12,93 @@
 3. NetBeans IDE
 
 ## Uraian Teori
-Array adalah sekumpulan tempat penyimpanan data yang bertipe sama dan memiliki index. Array dapat diibaratkan sebagai 
-sekumpulan variabel yang bertipe sama dan bernama sama. Array biasanya digunakan untuk menyimpan deret angka. Kemudian 
-untuk membedakan nilai/isi dari variabel tersebut, digunakan index.
-Ada dua tipe array:
-- Array satu dimensi
-- Array multi dimensi
 
-Pada jobsheet praktikum ini hanya akan dibahas array satu dimensi saja. Array multi dimensi akan dibahas di jobsheet 
-selanjutnya.
+### Array Dua Dimensi
+Array yang telah kita pelajari sebelumnya adalah satu dimensi, yang hanya terdiri dari satu baris elemen. Biasanya untuk
+menyajikan sebuah data dalam bentuk tabel, dalam tabel tersebut disajikan dalam bentuk **baris** dan **kolom**. Hal ini yang
+menjadi ciri khas dari sebuah array 2 dimensi. 
 
-### Array Satu Dimensi
-Amati ilustrasi tentang variabel berikut ini.
+Sebagai contoh 
+1. Buku tamu yang terdapat di perpustakaan untuk melakukan pencatatan kunjungan pengunjung, dimana dalam buku tamu
+tersebut terdapat informasi nim, nama, tanggal kunjungan, dan tanda tangan.
+2. Rating film yang dilakukan oleh penonton atau viewer. Masing-masing baris atau record diisi atau dirating oleh
+penonton, sedangkan pada bagian kolomnya adalah daftar judul film yang akan dilakukan rating. Visualisasi dapat dilihat
+pada tabel di bawah ini
 
-<figure style="text-align: center">
-          <img src="images/10-01.png" alt="Variabel"/>
-          <figcaption style="text-align: center; font-weight: bold">Gambar 1 Variabel</figcaption>
-      </figure>
+    |     | judul_0 | judul_1 | judul_2 |
+    | --- |---      | ---     | ---     |
+    | 0   | 4       | 4       | 3       |
+    | 1   | 2       | 4       | 3       |
+    | 2   | 4       | 4       | 3       |
+    | 3   | 1       | 2       | 2       |
+    | 4   | 4       | 4       | 4       |
 
-Ilustrasi diatas adalah variabel bertipe integer yang bernama bilanganBulat dan berisi nilai 17. Satu buah variabel 
-hanya dapat menyimpan satu buah nilai. Sekarang amati ilustrasi tentang array berikut ini:
+Tabel di atas menggambarkan bahwa setiap view akan melakukan rating terhadap 3 judul film, misalkan pada baris pertama
+melakukan rating pada `judul_0=4, judul_1=4, dan judul_2=3`.
 
-<figure style="text-align: center">
-          <img src="images/10-02.png" alt="Array satu dimensi"/>
-          <figcaption style="text-align: center; font-weight: bold">Gambar 2 Array satu dimensi</figcaption>
-      </figure>
+> Jadi Array 2 dimensi adalah sebuah array yang penomoran indeksnya menggunakan 2 angka yaitu satu untuk baris dan satu
+>lagi untuk kolom, atau sebenarnya array 2 dimensi adalah kumpulan dari array 1 dimensi.
 
-Ilustrasi diatas adalah **array** bertipe **integer** bernama **arrayInteger** dan memiliki kapasitas 5 buah bilangan 
-integer. Sebuah array dapat menyimpan lebih dari satu nilai (tergantung dari kapasitasnya). Meskipun begitu, nilai-nilai 
-yang disimpan di sebuah array harus bertipe sama. Tiap elemen pada array dinomori dengan index array. **Index array** 
-selalu dimulai dari 0 (nol).
+#### Cara Mendeklarasikan Array 2 dimensi
+Untuk dapat mendeklarasikan array 2 dimensi mirip dengan 1 dimensi, perbedaanya adalah jumlah kurung siku `[]` atau
+subskrip. Pada array 2 dimensi berarti menggunakan 2 kurung siku `[]`, pada java deklarasinya seperti di bawah ini
 
-### Cara Mendeklarasikan Array
-Secara umum, cara mendeklarasikan array adalah sebagai berikut:
 ```java
-tipe[] namaArray = new tipe[kapasitas];
+data_type[][] array_name = new data_type[x][y];
+x = jumlah baris
+Y = jumlah kolom
+Contoh
+int[][] arr = new int[10][20];
 ```
-- Tipe adalah tipe data dari array yang akan dibuat.
-- namaArray adalah nama dari array yang akan dibuat.
-- Kapasitas adalah banyaknya nilai yang dapat disimpan didalam array yang akan dibuat.
 
-Untuk mengakses (mengisi/membaca) sebuah elemen dari array, kita hanya perlu menuliskan nama array tersebut, kemudian 
-diikuti dengan index yang dituju didalam tanda kurung kotak [ ].
+Selain contoh di atas, deklarasi yang lain juga dapat dilakukan seperti di bawah ini
+1. `tipe_data[][] nama_variabel`
+2. `tipe_data [][]nama_variabel`
+3. `tipe_data nama_variabel[][]`   
+4. `tipe_data []nama_variabel[]`
 
-Contoh program berikut ini membuat array bernama bil, bertipe integer, jumlah elemen 4, kemudian mengisinya dengan 
-beberapa nilai, kemudian menampilkan isi elemennya ke layar.
+Akan tetapi, yang sering kita jumpai atau sering digunakan adalah pada no.1 dan no.3, ketika menggunakan Java adalah 
+seperti di bawah ini
+```java
+int[][] ratings;
+int [][]ratings;
+int ratings[][];
+int []ratings[];
+```
 
-<figure style="text-align: left">
-          <img src="images/10-03.png" alt="Array satu dimensi"/>
-      </figure>
-<figure style="text-align: left">
-          <img src="images/10-04.png" alt="Hasil"/>
-      </figure>
+#### Inisialisasi Array 2 Dimensi
+Untuk memberikan nilai awal pada array 2 dimensi menggunakan operator assigment `=`, ketika melakukan inisialisasi array
+2 dimensi kolom pada setiap baris boleh berbeda seperti dicontohkan di bawah ini
 
-Ada beberapa alternatif cara untuk mendeklarasikan array.
-1.	Deklarasi array tanpa mengalokasikan jumlah elemennya:
+```java
+int a[][]={
+    {1,2,3,4},
+    {5,6,7,8},
+    {7,8,9,6}
+}
+int b[][]={
+    {1},
+    {5,6,7,8},
+    {7,8,9}
+}
+```
+Array yang pertama pada `variabel a` kolomnya semua sama antar baris, sedangkan jika kita lihat pada `array b` kolomnya
+berbeda. Dalam array 2 multidimensi hal tersebut diperbolehkan. Ketika divisualisasikan ke dalam sebuah tabel seperti di
+bawah ini
 
-    `int[] myArray;`
-    
-2.	Deklarasi array dengan mengalokasikan 10 elemen:
-
-    `int[] myArray = new int[10];`
-    
-3.  Mengubah jumlah elemen array dengan 50: 
-
-    `myArray = new int[50];`
-    
-4.	Deklarasi array dan mengisinya secara langsung:
-    ```java
-    int[] myArray = {10, 20, 30, 40};
-    String[] myArray2 = {"Malang", "Surabaya"};
-    ```
-5.	Mengetahui jumlah elemen array: 
-
-    `myArray.length;`
-
-### Menggunakan Perulangan Pada Array Satu Dimensi
-Untuk mengakses (mengisi/membaca) nilai dari sebuah array, kita dapat menggunakan perulangan.
-
-<figure style="text-align: left">
-          <img src="images/10-05.png" alt="Mengakses array"/>
-      </figure>
-      Hasil
-   <figure style="text-align: left">
-                <img src="images/10-06.png" alt="Hasil"/>
-            </figure>
-
-Kita juga bisa menggunakan perulangan untuk menerima input dan menyimpannya kedalam array. Contoh, program yang meminta 
-input sebanyak 5 bilangan kemudian menampilkan kembali 5 bilangan tersebut.
-
-<figure style="text-align: left">
-          <img src="images/10-07.png" alt="Input array"/>
-      </figure>
-      
-   <figure style="text-align: left">
-                <img src="images/10-08.png" alt="Hasil"/>
-            </figure>
+   |     | 0 | 1 | 2 | 3 |
+   | --- |---|---|---|---|
+   | 0   | 1[0,0] | 2[0,1] | 3[0,2] | 4[0,3] |    
+   | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
+   | 2   | 7[2,0] | 8[2,1] | 9[2,2] | 6[2,3] |
+   
+   |     | 0 | 1 | 2 | 3 |
+   | --- |---|---|---|---|
+   | 0   | 1[0,0] |  |  |  |    
+   | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
+   | 2   | 7[2,0] | 8[2,1] | 9[2,2] |  |
 
 ### Input Jumlah Elemen Array
-Kita juga dapat membuat program yang meminta input berapa banyak jumlah elemen array.
-Langkahnya secara umum adalah:
-
-1. Deklarasikan array tanpa mengalokasikan jumlah elemennya.
-2. Buat input yang menerima jumlah elemen array kemudian simpan di sebuah variabel.
-3. Set jumlah elemen array menggunakan variabel yang diinputkan tadi.
-Coba amati program berikut ini:
-
-<figure style="text-align: left">
-          <img src="images/10-09.png" alt="Input array"/>
-      </figure>
-      
-   <figure style="text-align: left">
-                <img src="images/10-10.png" alt="Hasil"/>
-            </figure>
 
 ## Langkah Praktikum
 Ikuti langkah-langkah praktikum berikut ini.
