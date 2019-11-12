@@ -4,10 +4,8 @@ node_js:
 sudo: false
 
 branches:
-  except:
-    - gh-pages
   only:
-    - master
+    - develop
 
 cache:
   directories:
@@ -24,6 +22,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: _book
-  fqdn: programming.dhanifudin.com
+  target_branch: master
   on:
-    branch: master
+    branch: develop
