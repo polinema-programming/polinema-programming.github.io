@@ -218,22 +218,22 @@ Ikuti langkah-langkah praktikum berikut ini.
    ```
 
 ### Praktikum 2
-1.	Buat file baru beri nama `Arr2.java`
-2.	Buat array bertipe integer dengan nama `nilai` yang mempunyai kapasitas baris 2 elemen dan kolom 3 elemen.
-        ```java
+1. Buat file baru beri nama `Arr2.java`
+2. Buat array bertipe integer dengan nama `nilai` yang mempunyai kapasitas baris 2 elemen dan kolom 3 elemen.
+      ```java
         int [][] nilai=new int [2][3];
-        ```
-3.	Isi array tersebut dengan nilai sebaga berikut:
-        ```java
+   ```
+3. Isi array tersebut dengan nilai sebaga berikut:
+      ```java
         nilai[0][0]=12;
         nilai[0][1]=14;
         nilai[0][2]=34;
         nilai[1][0]=30;
         nilai[1][1]=21;
         nilai[1][2]=67;
-        ```
-4.	Dengan perulangan, tampilkan semua isi array `nilai`.
-        ```java
+      ```
+4. Dengan perulangan, tampilkan semua isi array `nilai`.
+      ```java
         for (int i=0; i<2; i++){
                    for (int j=0; j<3; j++){
         System.out.print(nilai[i][j] +" ");
@@ -241,11 +241,38 @@ Ikuti langkah-langkah praktikum berikut ini.
         System.out.println(" ");
         }
         ```
-5.	Cocokkan dan amati hasilnya dengan gambar berikut:
-        ```xml
+5. Cocokkan dan amati hasilnya dengan gambar berikut:
+     ```xml
         12 14 34
         30 21 67
-        ```
+      ```
+#### Pertanyaan
+1. Pada array di atas ada berapa kolom? silakan diubah jumlah kolomnya menjadi 4 serhingga deklarasi array menjadi
+    ```java
+    int [][] nilai=new int [2][4]
+    ```
+    Kemudian silakan diisi dengan sembarang nilai terkait penambahan kolom tersebut. Jalankan kembali dan apakah yang 
+    terjadi?
+2. Pada langkah ke-4 kode di atas silakan diubah menjadi seperti di bawah ini
+    ```java
+    for (int i=0; i<nilai.length; i++){
+        for (int j=0; j<nilai[0].length; j++){
+            System.out.print(nilai[i][j] +" ");
+        }
+        System.out.println(" ");
+    }
+    ```
+   Jalankan programnya setelah perubahan tersebut, apa yang terjadi?
+3. Masih terkait untuk menampilkan semua element array, silakan kode untuk menampilkan diubah menjadi berikut ini
+    ```java
+        for (int array1D[]: nilai){
+            for (int j : array1D){
+                System.out.print(j +" ");
+            }
+            System.out.println(" ");
+        }
+      ```
+   Jalankan hasilkan perubahan tersebut, apakah yang terjadi?
 
 ### Praktikum 3
 1.	Buat file baru beri nama `Arr3.java`
@@ -285,98 +312,107 @@ Ikuti langkah-langkah praktikum berikut ini.
                         <img src="images/12-04.png" alt="RGB"/>
                     </figure>
             
-7.	Lakukan perulangan soal 4 dan 5 menggunakan `while` atau `do-while`!
+7.	Lakukan perulangan soal 4 menggunakan `while` atau `do-while`!
+8. Ganti kode untuk menampilkan array menjadi `foreach`!
+9. Tambahkan kode untuk memasukan jumlah baris dan kolom secara dinamis, dimasukan melalui keyboard!
 
 ### Praktikum 4
 Pada praktikum ini, kita akan membuat program array dua dimensi dengan kapasitas elemen baris dan kolom menggunakan 
 inputan keyboard.
-1.	Buat file baru beri nama `Arr4.java`
-2.	Import dan deklarasikan Scanner untuk keperluan input:
-
-       ```java
-        import java.util.Scanner;
-        Scanner input = new Scanner(System.in);
-       ```
-
-3. Buatlah dua buah variabel bertipe integer dengan nama `barisA` dan kolom B untuk mendeklarasikan dan menginputkan 
-kapasitas elemen baris dan kolom pada array.
-      ```java
-        int barisA, kolomA;
-         System.out.print("Masukkan Size Baris Matriks A : ");
-        barisA = input.nextInt();
-        System.out.print("Masukkan Size Kolom Matriks A : ");
-        kolomA = input.nextInt();
-      ```
-4.	Buatlah array bertipe integer dengan nama `MatrikA` dengan kapasitas elemen untuk baris dan kolom yang di inputkan.
+1. Buat file baru beri nama `Arr4.java`, jangan lupa untuk memembuat `method main`.
+2. Deklarasikan array seperti di bawah ini
     ```java
-      int[][] MatrikA = new int[barisA][kolomA];
+    int RGB[][][] = {
+                    {
+                            {2, 2, 3},
+                            {5, 6, 7}
+                    },
+                    {
+                            {6, 8, 5},
+                            {5, 2, 6}
+                    }
+            };
     ```
+3. Kemudian tampilkan array tersebut menggunakan potongan kode di bawah ini
+    ```java
+   for (int i = 0; i < 2; i++) {
+       for (int j = 0; j < 2; j++) {
+           for (int k = 0; k < 3; k++) {
+               System.out.print(RGB[i][j][k] + " ");
+           }
+           System.out.println();
+       }
+       System.out.println();
+   }
+    ```
+   Jalankan kode tersebut, sehingga akan menampilkan semua elemen array.
+   
+#### Pertanyaan
+1. Pada langkah ke-1, ganti kode menjadi seperti di bawah ini
+    ```java
+    int RGB[][][] = {
+                    {
+                            {2, 2, 3},
+                            {5, 6, 7}
+                    },
+                    {
+                            {6, 8, 5},
+                            {5, 2}
+                    }
+            };
+    ```
+   Jalankan kembali program Anda, apakah yang terjadi?
+2. Potongan kode untuk menampilkan array silakan diganti menjadi berikut
+    ```java
+    for (int i = 0; i < RGB.length; i++) {
+       for (int j = 0; j < RGB[1].length; j++) {
+          for (int k = 0; k < RGB[0][1].length; k++) {
+              System.out.print(RGB[i][j][k] + " ");
+          }
+          System.out.println();
+       }
+       System.out.println();
+   }
+    ```
+   Silakan jalankan, outputnya seperti apa?
+3. Pada pertanyaan no.2, ubah menjadi seperti berikut
+    ```java
+    for (int array2D[][] : RGB) {
+                for (int array1D[] : array2D) {
+                    for (int x : array1D) {
+                        System.out.print(x + " ");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+            }
+    ```
+   Jalankan hasil perubahan, bagaimana hasilnya?
+4. Dari perubahan-perubahan tersebut untuk menampilkan array 3D, apakah yang dapat Anda simpulkan!
 
-5.	Menggunakan perulangan, buat input untuk mengisi elemen dari array `MatrikA`:
-       ```java
-        System.out.println("Input Elemen Matriks A : ");
-        for (int i = 0; i < barisA; i++) {
-        for (int j = 0; j < kolomA; j++) {
-        System.out.print("Matrik A[" + i + "][" + j + "]" + ": ");
-        MatrikA[i][j] = input.nextInt();
-        }
-        System.out.println();
-        }
-        ```
-
-6.	Menggunakan perulangan, tampilkan semua isi elemen dari array `MatrikA`:
-       ```java
-        System.out.println("Hasil output matriknya adalah : ");
-        for (int i = 0; i < barisA; i++) {
-        for (int j = 0; j < kolomA; j++) {
-        System.out.print(MatrikA[i][j]+" ");
-        }
-        System.out.println();
-        }
-        ```
-7.	Cocokkan dan amati hasilnya dengan gambar berikut ini:
-
-        <figure style="text-align: left">
-                        <img src="images/12-05.png" alt="RGB"/>
-                    </figure>
-            
-8.	Lakukan perulangan soal 5 dan 6 menggunakan `while` atau `do-while`!
-
-## Tugas
-1.	(Nilai MAX). Buatlah program array dua dimensi yang memiliki kapasitas baris dan kolom adalah 3 dan 4. Buatlah 
-input untuk mengisi elemen array tersebut mengunakan perulangan, selanjutnya tampilkan nilai MAX dari isi array tersebut.
-2.	(Total isi array). Buatlah program array dua dimensi dengan nama Array1[4][5]. Selanjutnya buatlah input 
-untuk mengisi elemen array tersebut menggunakan perulangan. Kemudian tampilkan jumlah  total keseluruhan isi Array1 
-tersebut!
-3.	Buatlah program array dua dimensi yang memiliki kapasitas baris dan kolom diperoleh dari input keyboard. Kemudian 
-buatlah input untuk mengisi elemen array tersebut. Selanjutnya buatlah pilihan menu yang terdiri dari:
-
-       - (Nilai MIN). Tampilkan ke layar nilai elemen array yang terkecil.
-       - (Nilai MIN & Jumlahnya). Tampilkan ke layar nilai yang terkecil dan berapa buah nilai yang terkecil tersebut dan
-         ada dilokasi mana saja nilai terbesar tersebut.  
-       - (Kondisi Array). Tampilkan ke layar perkataan “ADA” jika diantara isis array dua dimensi tersebut ada yang 
-        nilainya =50, bila tidak ada maka cetak perkataan “TIDAK ADA”.
-    
-4.	(Nilai Terbesar Baris & Kolom). Buatlah program array dua dimensi yang memiliki kapasitas elemen baris dan kolom 
-yaitu 3 dan 5. Kemudian buatlah input untuk mengisi elemen array tersebut menggunakan perulangan. Selanjutnya cetak 
-nilai-nilai isi array tersebut yang merupakan nilai terbesar pada barisnya dan merupakan nilai tersbesar pada kolomnya. 
-Misalnya isi array tersebut sebagai berikut:
-
-       <figure style="text-align: center">
-                        <img src="images/12-06.png" alt="RGB"/>
-                    </figure>
-            
-         Maka output yang di tampilkan pada layar adalah 30 dan 37, karena keduanya merupakan nilai merupakan nilai 
-         terbesar pada baris dan kolomnya. Sedangkan 25 hanya terbesar pada barisnya, tapi tidak terbesar pada kolomnya.
-5.	(Matrik Transpose). Buatlah program array dua dimensi untuk membuat sebuah matrik dengan kapasitas elemen baris dan 
-kolom yang jumlahnya diperoleh dari inputan keyboard. Buatlah input untuk mengisi elemen matrik tersebut menggunakan 
-perulangan. Kemudian lakukan transpose pada matrik tersebut. Selanjutnya tampilkan ke layar hasil transposenya. 
-6.	Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi 
+## Tugas    
+1. Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi 
 `char KODE[10]`, berisi kode plat mobil. Array kedua, array dua dimensi `char KOTA[10][12]` berisi nama kota yang 
 berpasangan dengan kode plat mobil. Ilustrasi tampilan array tersebut adalah sebagai berikut :
 
-<figure style="text-align: center">
+    <figure style="text-align: left">
                 <img src="images/12-07.png" alt="RGB"/>
             </figure>
 
+2. Buatlah program dengan tampilan di bawah ini
+    <figure style="text-align: left">
+                    <img src="images/12-09.png" alt="RGB"/>
+                </figure>
+                
+    Ketentuan dari program di atas adalah
+    - Ukuran matriks ditentukan melalui keyboard
+    - Ada pengecekan ketika matriks A dan matriks B memiliki perbedaan ukuran
+    - Untuk menghitung nilai maksimal baris pada array, ukuran ditentukan melalui keyboard
+
+3. Dengan menggunakan matriks 3 dimensi, selesaikan kasus seperti berikut ini
+    - Sebuah jurusan teknologi informasi pada politeknik terkenal di Malang, memiliki 5 kelas program studi D4 TI. 
+    Masing-masing kelas memiliki jumlah mahasiswa yang berbeda-beda. 
+    - Seorang dosen matakuliah `Dasar Pemrograman` berkeinginan untuk menghitung nilai rata-rata setiap mahasiswa
+    - nilai rata-rata didapatkan dari perhitungan nilai UTS, UAS, dan project.
+    - Buatlah programnya untuk kebutuhan tersebut!
 
