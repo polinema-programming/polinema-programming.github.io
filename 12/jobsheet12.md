@@ -117,248 +117,266 @@ Ketika dipanggil `a.length` maka hasilnya adalah 3(jumlah baris), sedangkan keti
 > mengubah kode yang ada di dalam looping untuk ukuran baris dan kolomnya.
 
 ### Array Tiga Dimensi
+Array 3 dimensi merupakan bentuk kompleks dari array multidimensi, seperti pada konsep sebelumnya array 2 dimensi adalah
+kumpulan dari array 1 dimensi. Begitu juga dengan array 3 dimensi, yang merupakan kumpulan array 2 dimensi. Contoh
+penerapan array 3 dimensi adalah pada gambar berwarna `RGB(Red Green Blue)`. Visualisasinya adalah di bawah ini
+
+<figure style="text-align: center">
+          <img src="images/12-01.png" alt="RGB"/>
+          <figcaption style="text-align: center; font-weight: bold">RGB</figcaption>
+      </figure>
+      
+<figure style="text-align: center">
+                <img src="images/12-02.png" alt="RGB"/>
+                <figcaption style="text-align: center; font-weight: bold">Channel RGB</figcaption>
+            </figure>
+            
+Dari visualisasi di atas terlihat setiap gambar memiliki 3 channel atau layer yaitu RGB(Red, Green, dan Blue), 3 channel
+tersebut yang merepresentasikan array 3 dimensi. Setiap channel, RGB direpresentasikan array 2 dimensi. Jadi sudah 
+sesuai dengan konsep array 3 dimensi bahwa merupakan kumpulan dari array 2 dimensi.
+
+#### Deklarasi Array 3 Dimensi
+Untuk dapat mendeklarasikan array 3 dimensi yaitu dengan menambahkan kurung siku `[]` atau subskrip menjadi 3, `[][][]`.
+Secara umum deklarasinya adalah di bawah ini
+```java
+data_type[][][] array_name = new data_type[x][y][z];
+x = index array
+y = baris
+z = kolom
+Contoh: int[][][] arr = new int[10][20][30];
+```
+
+#### Inisialisasi Array 3 Dimensi
+Untuk memudahkan inisialisasi array 3D, bisa menggunakan representasi array 2D. Atau secara umum dapat digunakan dapat
+disajikan seperti di bawah ini
+```java
+array_name[array_index][baris][kolom] = value; 
+contoh: arr[0][0][0] = 1;
+data_type[][][] array_name = { 
+	{
+	 	{valueA1B1C1, valueA1B1C2, ....}, 
+		{valueA1B2C1, valueA1B2C2, ....} 
+	}, 
+	{ 
+		{valueA2B1C1, valueA2B1C2, ....}, 
+		{valueA2B2C1, valueA2B2C2, ....} 
+	} 
+};
+```
+
+Keterangan
+- A adalah indek array
+- B adalah baris
+- C adalah kolom
+
+Ketika diimplementasikan menggunakan Java kurang lebih seperti di bawah ini
+```java
+int[][][] a = { 
+	{
+	 	{1,2}, 
+		{3,4} 
+	}, 
+	{ 
+		{5,6}, 
+		{7,8} 
+	} 
+};
+```
+Atau misalkan dilakukan visualisasi adalah seperti di bawah ini
+<figure style="text-align: center">
+                <img src="images/12-03.png" alt="RGB"/>
+                <figcaption style="text-align: center; font-weight: bold">Array 3 Dimensi</figcaption>
+            </figure>
 
 ## Langkah Praktikum
 Ikuti langkah-langkah praktikum berikut ini.
 ### Praktikum 1
-1. Buat class baru dengan nama `MyArray.java`
-2. Buat array bertipe integer dengan nama bil dengan kapasitas 4 elemen.
-
-   `int[] bil = new int[4]`
-
-3. Isi masing-masing elemen array bil tadi dengan angka 5, 12, 7, 20.
+1. Buka editor Netbeans.
+2. Buat file bernama `Arr1.java`
+3. Buat array bertipe integer dengan nama `nilai` dengan kapasitas baris 2 elemen dan kolom 3 elemen.
     ```java
-    bil[0]=5;
-    bil[1]=12;
-    bil[2]=7;
-    bil[3]=20;
+    int [][] nilai=new int [2][3];
     ```
-4. Tampilkan ke layar semua isi elemennya:
+4. Isi masing-masing elemen array sebagai berikut:
     ```java
-    System.out.println(bil[0]);
-    System.out.println(bil[1]);
-    System.out.println(bil[2]);
-    System.out.println(bil[3]);
+    nilai[0][0]=12;
+    nilai[0][1]=14;
+    nilai[0][2]=34;
+    nilai[1][0]=30;
+    nilai[1][1]=21;
+    nilai[1][2]=67;
     ```
-5. Cocokkan dan amati hasilnya dengan gambar berikut ini:
-<figure style="text-align: left">
-          <img src="images/10-11.png" alt="Output array"/>
-      </figure>  
-      
-#### Pertanyaan
-1. Dari percobaan 1 berapakah indeks array terbesar dan terkecil?
-2. Jika Isi masing-masing elemen array bil diubah dengan angka 5.0, 12867, 7.5, 2000000. Apa yang terjadi? 
-Mengapa bisa demikian?
-3. Ubah statement pada langkah No 4 menjadi seperti berikut 
-    ```java
-    for(int i=0; i<4; i++){
-        System.out.println(bil[i]);
-    }
-    ```
-    Apa keluaran dari program? Mengapa bisa demikian?
-    
-### Praktikum 2
-1. Buat file baru beri nama `ArrayInputLoop.java`
-2. Import dan deklarasikan Scanner untuk keperluan input. 
-
-    `Scanner sc = new Scanner(System.in)`
-
-3. Buat array bertipe integer dengan nama `nilaiUAS`, dengan kapasitas 6 elemen. 
-
-    `int nilaiUAS[] = new int[6]`
-
-4. Menggunakan perulangan, buat input untuk mengisi elemen dari array `nilaiUAS`.
-    ```java
-        for(int i=0; i<6; i++){
-            System.out.print("Masukan nilai UAS ke-"+i+": ");
-            nilaiUAS[i]=sc.nextInt();
-        }
-       ```
-5. Menggunakan perulangan, tampilkan semua isi elemen dari array `nilaiUAS`.
-    ```java
-        for(int i=0; i<6; i++){
-            System.out.println("Nilai UAS ke-"+i+" adalah "+nilaiUAS[i]);
-        }
-       ```
-6. Cocokkan dan amati hasilnya dengan gambar berikut ini:
-<figure style="text-align: left">
-          <img src="images/10-12.png" alt="Output array"/>
-      </figure>
-      
-#### Pertanyaan
-1. Ubah statement pada langkah No 4 menjadi seperti berikut ini :
-    ```java
-        for(int i=0; i<nilaiUAS.length; i++){
-            System.out.print("Masukan nilai UAS ke-"+i+": ");
-            nilaiUAS[i]=sc.nextInt();
-        }
-       ```
-Jalankan program, Apakah terjadi perubahan? Mengapa demikian?
-2. Apa kegunaan dari `nilaiUAS.length` ? 
-3. Ubah statement pada langkah No 5 menjadi seperti berikut ini, sehingga program hanya menampilkan nilai Mahasiswa 
-yang lulus saja :
-    ```java
-        for(int i=0; i<nilaiUAS.length; i++){
-            if(nilaiUAS[i] > 70){
-                System.out.println("Mahasiswa ke-"+i+" lulus");
-            }   
-        }
+5.	Tampilkan ke layar semua isi elemennya:
+   ```java
+    System.out.println(nilai[0][0]+" "+nilai[0][1]+" "+nilai[0][2]);
+    System.out.println(nilai[1][0]+" "+nilai[1][1]+" "+nilai[1][2]);
    ```
-Jalankan program dan Jelaskan alur program!
-4. Modifikasi program agar menampilkan semua mahasiswa, dan ditandai mana yang lulus dan tidak lulus.
-<figure style="text-align: left">
-          <img src="images/10-13.png" alt="Output array"/>
-      </figure>
-      
+6.	Cocokkan dan amati hasilnya dengan hasil berikut:
+   ```xml
+    12 14 34
+    30 21 67
+   ```
+
+### Praktikum 2
+1.	Buat file baru beri nama `Arr2.java`
+2.	Buat array bertipe integer dengan nama `nilai` yang mempunyai kapasitas baris 2 elemen dan kolom 3 elemen.
+        ```java
+        int [][] nilai=new int [2][3];
+        ```
+3.	Isi array tersebut dengan nilai sebaga berikut:
+        ```java
+        nilai[0][0]=12;
+        nilai[0][1]=14;
+        nilai[0][2]=34;
+        nilai[1][0]=30;
+        nilai[1][1]=21;
+        nilai[1][2]=67;
+        ```
+4.	Dengan perulangan, tampilkan semua isi array `nilai`.
+        ```java
+        for (int i=0; i<2; i++){
+                   for (int j=0; j<3; j++){
+        System.out.print(nilai[i][j] +" ");
+        }
+        System.out.println(" ");
+        }
+        ```
+5.	Cocokkan dan amati hasilnya dengan gambar berikut:
+        ```xml
+        12 14 34
+        30 21 67
+        ```
+
 ### Praktikum 3
-Pada praktikum ini, akan dilakukan percobaan untuk menjumlahkan Array. Program akan menerima input sebanyak 10 nilai 
-mahasiswa. Kemudian program akan menampilkan nilai rata-rata dari dari 10 Mahasiswa.
-1. Buat class baru beri nama `rataNilai`.
-2. Import dan deklarasikan `Scanner` untuk keperluan input. 
+1.	Buat file baru beri nama `Arr3.java`
+2.	Import dan deklarasikan `Scanner` untuk keperluan input.
 
-    `Scanner sc = new Scanner(System.in)`
+       ```java
+        import java.util.Scanner;
+        Scanner input=new Scanner(System.in);
+       ```
 
-3. Buat array nilaiMHS bertipe integer dengan kapasitas 10. Kemudian deklarisakan variable total dan rata seperti 
-gambar berikut ini
-    ```java
-    int[] nilaiMHS = new int[10];
-    int total = 0;
-    double rata;
-    ```
-4. Menggunakan perulangan, buat input untuk mengisi array `nilaiMHS`
-    ```java
-        for(int i=0; i<nilaiMHS.length; i++){
-            System.out.print("Masukkan nilai mahasiswa ke-"+(i+1)+": ");
-            nilaiMHS[i]=sc.nextInt();
+3.	Buat array bertipe integer dengan nama `nilai` dengan kapasitas baris 2 elemen dan kolom 3 elemen.
+        ```java
+        int [][] nilai=new int [2][3];
+        ```
+4.	Menggunakan perulangan, buat input untuk mengisi elemen dari array `nilai`:
+        ```java
+        for (int i=0; i<2; i++){
+        for (int j=0; j<3; j++){
+        System.out.print("Masukkan nilai ke-["+i+"]["+j+"] ");
+        nilai[i][j]=input.nextInt();
         }
-       ```
-5. Menggunakan perulangan untuk menghitung jumlah keseluruhan nilai.
-    ```java
-        for(int i=0; i<nilaiMHS.length; i++){
-            total+=nilaiMHS[i];
+        System.out.println("------------------------");
         }
+        ```
+5.	Menggunakan perulangan, tampilkan semua isi elemen dari array `nilai`
+        ```java
+        for (int i=0; i<2; i++){
+        for (int j=0; j<3; j++){
+        System.out.print(nilai[i][j]+" ");
+        }
+        System.out.println();
+        }
+        ```
+6.	Cocokkan dan amati hasilnya dengan gambar berikut ini:
+
+        <figure style="text-align: left">
+                        <img src="images/12-04.png" alt="RGB"/>
+                    </figure>
+            
+7.	Lakukan perulangan soal 4 dan 5 menggunakan `while` atau `do-while`!
+
+### Praktikum 4
+Pada praktikum ini, kita akan membuat program array dua dimensi dengan kapasitas elemen baris dan kolom menggunakan 
+inputan keyboard.
+1.	Buat file baru beri nama `Arr4.java`
+2.	Import dan deklarasikan Scanner untuk keperluan input:
+
+       ```java
+        import java.util.Scanner;
+        Scanner input = new Scanner(System.in);
        ```
-6.	Kemudian hitung nilai rata-rata dengan cara nilai total dibagi jumlah elemen dari array `nilaiMHS`
+
+3. Buatlah dua buah variabel bertipe integer dengan nama `barisA` dan kolom B untuk mendeklarasikan dan menginputkan 
+kapasitas elemen baris dan kolom pada array.
+      ```java
+        int barisA, kolomA;
+         System.out.print("Masukkan Size Baris Matriks A : ");
+        barisA = input.nextInt();
+        System.out.print("Masukkan Size Kolom Matriks A : ");
+        kolomA = input.nextInt();
+      ```
+4.	Buatlah array bertipe integer dengan nama `MatrikA` dengan kapasitas elemen untuk baris dan kolom yang di inputkan.
     ```java
-    rata = total/nilaiMHS.length;
-    System.out.println(rata);
+      int[][] MatrikA = new int[barisA][kolomA];
     ```
-7. Amati hasilnya
-<figure style="text-align: left">
-          <img src="images/10-14.png" alt="Output array"/>
-      </figure>
-      
-#### Pertanyaan
-1. Pada praktikum 4 no 6. Mengapa perhitungan rata berada diluar perulangan?
-2. Modifikasi program pada praktikum 4 sehingga bisa mengeluarkan output seperti gambar berikut ini
-<figure style="text-align: left">
-          <img src="images/10-15.png" alt="Output array"/>
-      </figure>
+
+5.	Menggunakan perulangan, buat input untuk mengisi elemen dari array `MatrikA`:
+       ```java
+        System.out.println("Input Elemen Matriks A : ");
+        for (int i = 0; i < barisA; i++) {
+        for (int j = 0; j < kolomA; j++) {
+        System.out.print("Matrik A[" + i + "][" + j + "]" + ": ");
+        MatrikA[i][j] = input.nextInt();
+        }
+        System.out.println();
+        }
+        ```
+
+6.	Menggunakan perulangan, tampilkan semua isi elemen dari array `MatrikA`:
+       ```java
+        System.out.println("Hasil output matriknya adalah : ");
+        for (int i = 0; i < barisA; i++) {
+        for (int j = 0; j < kolomA; j++) {
+        System.out.print(MatrikA[i][j]+" ");
+        }
+        System.out.println();
+        }
+        ```
+7.	Cocokkan dan amati hasilnya dengan gambar berikut ini:
+
+        <figure style="text-align: left">
+                        <img src="images/12-05.png" alt="RGB"/>
+                    </figure>
+            
+8.	Lakukan perulangan soal 5 dan 6 menggunakan `while` atau `do-while`!
 
 ## Tugas
-Kerjakan tugas sesuai dengan instruksi berikut ini.
-1. Buatlah program yang terdapat array dengan jumlah elemen 5, buatlah input untuk mengisi elemen array tersebut, 
-kemudian tampilkan isi array tersebut dengan urutan terbalik. Seperti ilustrasi gambar dibawah ini.
-<figure style="text-align: center">
-          <img src="images/10-16.png" alt="Output array"/>
-      </figure>
-      <figure style="text-align: center">
-                <img src="images/10-17.png" alt="Output array"/>
-            </figure>
-2. Buatlah program yang menerima input jumlah elemen array, inputkan isi arraynya, kemudian tampilkan mana yang genap 
-dan mana yang ganjil. Contoh hasil program:
-<figure style="text-align: left">
-                <img src="images/10-18.png" alt="Output array"/>
-            </figure>
-3. Dengan menggunakan konsep Array, Buatlah program untuk menghitung Nilai IP Semester berdasarkan Matakuliah yang 
-Anda Ambil semester ini. Program meminta pengguna untuk memasukkan jumlah matakuliah yang diambil pada semester ini, 
-selanjutnya program tersebut meminta pengguna untuk memasukkan nama matakuliah, bobot SKS masing-masing matakuliah, 
-dan Nilai dari masing-masing matakuliah.
-Contoh hasil program:
-<figure style="text-align: left">
-                <img src="images/10-19.png" alt="Output array"/>
-            </figure>
-<figure style="text-align: left">
-                <img src="images/10-20.png" alt="Hasil"/>
-            </figure>
-            Catatan : konversi nilai yang digunakan sesuai dengan peraturan polinema
-            <figure style="text-align: center">
-                            <img src="images/10-21.png" alt="Output array"/>
-                        </figure>
-4. Buatlah program untuk menghapus elemen tertentu pada sebuah Array
-5. **(ArrayMax)** Buatlah program yang menerima input jumlah elemen array, inputkan isi arraynya, kemudian tampilkan 
-bilangan terbesar dari isi elemen arraynya. Contoh hasil program:
+1.	(Nilai MAX). Buatlah program array dua dimensi yang memiliki kapasitas baris dan kolom adalah 3 dan 4. Buatlah 
+input untuk mengisi elemen array tersebut mengunakan perulangan, selanjutnya tampilkan nilai MAX dari isi array tersebut.
+2.	(Total isi array). Buatlah program array dua dimensi dengan nama Array1[4][5]. Selanjutnya buatlah input 
+untuk mengisi elemen array tersebut menggunakan perulangan. Kemudian tampilkan jumlah  total keseluruhan isi Array1 
+tersebut!
+3.	Buatlah program array dua dimensi yang memiliki kapasitas baris dan kolom diperoleh dari input keyboard. Kemudian 
+buatlah input untuk mengisi elemen array tersebut. Selanjutnya buatlah pilihan menu yang terdiri dari:
 
-    ```xml
-    Masukkan isi array: 4
-     Masukkan array ke-0: 25
-     Masukkan array ke-1: 10
-     Masukkan array ke-2: 55
-     Masukkan array ke-0: 15 
-     Bilangan terbesar: 55
-    ```
+       - (Nilai MIN). Tampilkan ke layar nilai elemen array yang terkecil.
+       - (Nilai MIN & Jumlahnya). Tampilkan ke layar nilai yang terkecil dan berapa buah nilai yang terkecil tersebut dan
+         ada dilokasi mana saja nilai terbesar tersebut.  
+       - (Kondisi Array). Tampilkan ke layar perkataan “ADA” jika diantara isis array dua dimensi tersebut ada yang 
+        nilainya =50, bila tidak ada maka cetak perkataan “TIDAK ADA”.
+    
+4.	(Nilai Terbesar Baris & Kolom). Buatlah program array dua dimensi yang memiliki kapasitas elemen baris dan kolom 
+yaitu 3 dan 5. Kemudian buatlah input untuk mengisi elemen array tersebut menggunakan perulangan. Selanjutnya cetak 
+nilai-nilai isi array tersebut yang merupakan nilai terbesar pada barisnya dan merupakan nilai tersbesar pada kolomnya. 
+Misalnya isi array tersebut sebagai berikut:
 
-## Materi Pengayaan
-### Pencarian Pada Array
-Salah satu hal yang sering dilakukan pada operasi array adalah pencarian atau searching. Pencarian dilakukan untuk 
-menemukan nilai tertentu pada elemen didalam array. Ada banyak algoritma searching, namun yang paling mudah adalah 
-Linear Search.
-
-Misalkan pada sebuah array, kita ingin mencari dimana posisi index dari sebuah array. Pada Linear Search, kita 
-membandingkan “key” atau angka yang ingin kita cari, dengan tiap elemen yang ada didalam array. Amati gambar berikut:
-<figure style="text-align: center">
-                <img src="images/10-22.png" alt="Linier search"/>
-                <figcaption style="text-align: center; font-weight: bold">Linier search</figcaption>
-            </figure>
-Pada gambar diatas, key atau angka yang ingin kita cari adalah 3. Menggunakan looping kita bandingkan masing-masing 
-elemen dari array. Dan ternyata angka 3 berada di index ke 5. Maka setelah ketemu, looping akan berhenti, dan hasil 
-akhir dari program adalah 5 (index dimana angka 3 berada). Amati contoh program berikut:
-<figure style="text-align: left">
-                <img src="images/10-23.png" alt="Output array"/>
-            </figure>
-<figure style="text-align: left">
-                <img src="images/10-24.png" alt="Hasil"/>
-                <figcaption style="text-align: left; font-weight: bold">Hasilnya</figcaption>
-            </figure>
+       <figure style="text-align: center">
+                        <img src="images/12-06.png" alt="RGB"/>
+                    </figure>
             
-### Sorting
-Sorting adalah proses mengurutkan elemen array dari yang terkecil ke besar (ascending) atau sebaliknya (descending). 
-Ada banyak algoritma untuk pengurutan, namun yang paling mudah adalah Bubble Sort.
+         Maka output yang di tampilkan pada layar adalah 30 dan 37, karena keduanya merupakan nilai merupakan nilai 
+         terbesar pada baris dan kolomnya. Sedangkan 25 hanya terbesar pada barisnya, tapi tidak terbesar pada kolomnya.
+5.	(Matrik Transpose). Buatlah program array dua dimensi untuk membuat sebuah matrik dengan kapasitas elemen baris dan 
+kolom yang jumlahnya diperoleh dari inputan keyboard. Buatlah input untuk mengisi elemen matrik tersebut menggunakan 
+perulangan. Kemudian lakukan transpose pada matrik tersebut. Selanjutnya tampilkan ke layar hasil transposenya. 
+6.	Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi 
+`char KODE[10]`, berisi kode plat mobil. Array kedua, array dua dimensi `char KOTA[10][12]` berisi nama kota yang 
+berpasangan dengan kode plat mobil. Ilustrasi tampilan array tersebut adalah sebagai berikut :
 
-Didalam Bubble Sort, dilakukan looping dari elemen pertama sampai elemen terakhir dari array. Kemudian tiap elemen 
-dibandingkan dengan elemen berikutnya. Jika elemen tersebut lebih besar dari elemen berikutnya, maka akan ditukar. 
-Amati ilustrasi berikut ini:
 <figure style="text-align: center">
-                <img src="images/10-25.png" alt="Bubble sort"/>
-                <figcaption style="text-align: center; font-weight: bold">Bubble sort</figcaption>
-            </figure>
-Berikut adalah contoh program Bubble Sort:
-<figure style="text-align: left">
-                <img src="images/10-26.png" alt="Output array"/>
-            </figure>
-<figure style="text-align: left">
-                <img src="images/10-27.png" alt="Hasil"/>
-                <figcaption style="text-align: left; font-weight: bold">Hasilnya</figcaption>
+                <img src="images/12-07.png" alt="RGB"/>
             </figure>
 
-## Tugas Pengayaan
-Kerjakan tugas sesuai dengan instruksi berikut ini.
-1. Buatlah program yang menerima input jumlah array, isi array, key yang ingin dicari. Cetak ke layar index posisi 
-elemen dari key yang ingin dicari. Contoh hasil program:
-    ```xml
-    Masukkan jumlah elemen array: 4
-    Array ke 0: 5
-    Array ke 1: 12
-    Array ke 2: 25
-    Array ke 3: 10
-    Masukkan key yang ingin dicari: 12
-    Key ada di posisi index ke: 1
-    ```
-2. Buatlah program yang menerima input jumlah array, isi array, kemudian urutkan array tersebut, kemudian tampilkan ke 
-layar hasil pengurutannya. Contoh hasil program:
-    ```xml
-    Masukkan jumlah elemen array: 4
-    Array ke 0: 5
-    Array ke 1: 12
-    Array ke 2: 
-    ```
+
