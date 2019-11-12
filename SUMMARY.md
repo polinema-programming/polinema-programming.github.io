@@ -11,6 +11,6 @@
 - [7. Mini Project]()
 - [8. UTS]()
 - [9. Sintaks Perulangan 1](09/jobsheet.md)
-- [10. Sintaks Perulangan 2]()
+- [10. Sintaks Perulangan 2](10/jobsheet.md)
 - [11. Array 1](11/jobsheet11.md)
 - [12. Array Multidimensi](12/jobsheet12.md)

@@ -44,6 +44,7 @@ if (kondisi)  {
 
 Bentuk flowchart:
 
+{% flowchart %}
 start=>start: Mulai
 end=>end: Selesai
 op1=>operation: operasi...
@@ -53,6 +54,7 @@ op2=>operation: operasi...
 start->op1->cond
 cond(yes, right)->op2->end
 cond(no)->end
+{% endflowchart %}
 
 > - Apabila kondisi bernilai benar, maka pernyataan akan dilaksanakan.
 > - Apabila kondisi bernilai salah, maka pernyataan tidak akan dilaksanakan.
@@ -115,6 +117,7 @@ if (kondisi) {
 
 Bentuk flowchart:
 
+{% flowchart %}
 start=>start: Mulai
 end=>end: Selesai
 cond=>condition: Ya atau Tidak?
@@ -124,6 +127,7 @@ op2=>operation: pernyataan 2
 start->cond
 cond(yes, left)->op1->end
 cond(no, right)->op2->end
+{% endflowchart %}
 
 Struktur ini minimal memiliki 2 pernyataan. Jika kondisi yang diperiksa bernilai
 benar atau terpenuhi maka pernyataan pertama yang akan dilaksanakan dan jika
@@ -183,6 +187,7 @@ if (kondisi1) {
 
 Bentuk Flowchart:
 
+{% flowchart %}
 start=>start: Mulai
 end=>end: Selesai
 cond1=>condition: Ya atau Tidak?
@@ -201,6 +206,7 @@ condx(no, right)->op->end
 cond1(yes)->op1->end
 cond2(yes)->op2->end
 condx(yes)->opx->end
+{% endflowchart %}
 
 Pada bentuk `if else if else` di atas, pernyataan 1 akan dijalankan apabila
 `kondisi1` bernilai benar. Jika `kondisi1` bernilai salah, maka akan dicek
