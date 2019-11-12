@@ -1,8 +1,9 @@
-#  Array 1
+#  Array Multidimensi
 
 ## Tujuan
-1.	Mahasiswa mampu memahami dan menjelaskan fungsi array satu dimensi.
-2.	Mahasiswa mampu membuat program dengan menggunakan konsep array satu dimensi.
+1.	Mahasiswa mampu memahami konsep array multidimensi
+1.	Mahasiswa mampu memberikan contoh penggunaan array multidimensi
+2.	Mahasiswa mampu membuat program menggunakan konsep array multidimensi
 
 
 ## Alat dan Bahan
