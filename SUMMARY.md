@@ -16,3 +16,4 @@
 - [12. Array Multidimensi](12/jobsheet12.md)
 - [13. Kuis 2](13/jobsheet.md)
 - [14. Fungsi 1](14/jobsheet.md)
+- [15. Fungsi 2](15/jobsheet.md)
