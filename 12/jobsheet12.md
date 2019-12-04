@@ -16,9 +16,9 @@
 ### Array Dua Dimensi
 Array yang telah kita pelajari sebelumnya adalah satu dimensi, yang hanya terdiri dari satu baris elemen. Biasanya untuk
 menyajikan sebuah data dalam bentuk tabel, dalam tabel tersebut disajikan dalam bentuk **baris** dan **kolom**. Hal ini yang
-menjadi ciri khas dari sebuah array 2 dimensi. 
+menjadi ciri khas dari sebuah array 2 dimensi.
 
-Sebagai contoh 
+Sebagai contoh
 1. Buku tamu yang terdapat di perpustakaan untuk melakukan pencatatan kunjungan pengunjung, dimana dalam buku tamu
 tersebut terdapat informasi nim, nama, tanggal kunjungan, dan tanda tangan.
 2. Rating film yang dilakukan oleh penonton atau viewer. Masing-masing baris atau record diisi atau dirating oleh
@@ -90,15 +90,15 @@ Visualisasi untuk `array a`
 
    |     | 0 | 1 | 2 | 3 |
    | --- |---|---|---|---|
-   | 0   | 1[0,0] | 2[0,1] | 3[0,2] | 4[0,3] |    
+   | 0   | 1[0,0] | 2[0,1] | 3[0,2] | 4[0,3] |
    | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
    | 2   | 7[2,0] | 8[2,1] | 9[2,2] | 6[2,3] |
-   
+
 Visualisasi untuk `array b`
-   
+
    |     | 0 | 1 | 2 | 3 |
    | --- |---|---|---|---|
-   | 0   | 1[0,0] |  |  |  |    
+   | 0   | 1[0,0] |  |  |  |
    | 1   | 5[1,0] | 6[1,1] | 7[1,2] | 8[1,3] |
    | 2   | 7[2,0] | 8[2,1] | 9[2,2] |  |
 
@@ -109,7 +109,7 @@ adalah sebagai berikut
 ```java
 int[][] a = new int[3][4];
 ```
-Ketika dipanggil `a.length` maka hasilnya adalah 3(jumlah baris), sedangkan ketika dipanggil `a[0].length` hasilnya 
+Ketika dipanggil `a.length` maka hasilnya adalah 3(jumlah baris), sedangkan ketika dipanggil `a[0].length` hasilnya
 4(jumlah kolom)
 
 >Ketika menggunakan attribut length tentunya akan sangat menguntungkan, baik ketika akan menginputkan element atau
@@ -125,14 +125,14 @@ penerapan array 3 dimensi adalah pada gambar berwarna `RGB(Red Green Blue)`. Vis
           <img src="images/12-01.png" alt="RGB"/>
           <figcaption style="text-align: center; font-weight: bold">RGB</figcaption>
       </figure>
-      
+
 <figure style="text-align: center">
                 <img src="images/12-02.png" alt="RGB"/>
                 <figcaption style="text-align: center; font-weight: bold">Channel RGB</figcaption>
             </figure>
-            
+
 Dari visualisasi di atas terlihat setiap gambar memiliki 3 channel atau layer yaitu RGB(Red, Green, dan Blue), 3 channel
-tersebut yang merepresentasikan array 3 dimensi. Setiap channel, RGB direpresentasikan array 2 dimensi. Jadi sudah 
+tersebut yang merepresentasikan array 3 dimensi. Setiap channel, RGB direpresentasikan array 2 dimensi. Jadi sudah
 sesuai dengan konsep array 3 dimensi bahwa merupakan kumpulan dari array 2 dimensi.
 
 #### Deklarasi Array 3 Dimensi
@@ -150,17 +150,17 @@ Contoh: int[][][] arr = new int[10][20][30];
 Untuk memudahkan inisialisasi array 3D, bisa menggunakan representasi array 2D. Atau secara umum dapat digunakan dapat
 disajikan seperti di bawah ini
 ```java
-array_name[array_index][baris][kolom] = value; 
+array_name[array_index][baris][kolom] = value;
 contoh: arr[0][0][0] = 1;
-data_type[][][] array_name = { 
+data_type[][][] array_name = {
 	{
-	 	{valueA1B1C1, valueA1B1C2, ....}, 
-		{valueA1B2C1, valueA1B2C2, ....} 
-	}, 
-	{ 
-		{valueA2B1C1, valueA2B1C2, ....}, 
-		{valueA2B2C1, valueA2B2C2, ....} 
-	} 
+	 	{valueA1B1C1, valueA1B1C2, ....},
+		{valueA1B2C1, valueA1B2C2, ....}
+	},
+	{
+		{valueA2B1C1, valueA2B1C2, ....},
+		{valueA2B2C1, valueA2B2C2, ....}
+	}
 };
 ```
 
@@ -171,15 +171,15 @@ Keterangan
 
 Ketika diimplementasikan menggunakan Java kurang lebih seperti di bawah ini
 ```java
-int[][][] a = { 
+int[][][] a = {
 	{
-	 	{1,2}, 
-		{3,4} 
-	}, 
-	{ 
-		{5,6}, 
-		{7,8} 
-	} 
+	 	{1,2},
+		{3,4}
+	},
+	{
+		{5,6},
+		{7,8}
+	}
 };
 ```
 Atau misalkan dilakukan visualisasi adalah seperti di bawah ini
@@ -251,7 +251,7 @@ Ikuti langkah-langkah praktikum berikut ini.
     ```java
     int [][] nilai=new int [2][4]
     ```
-    Kemudian silakan diisi dengan sembarang nilai terkait penambahan kolom tersebut. Jalankan kembali dan apakah yang 
+    Kemudian silakan diisi dengan sembarang nilai terkait penambahan kolom tersebut. Jalankan kembali dan apakah yang
     terjadi?
 2. Pada langkah ke-4 kode di atas silakan diubah menjadi seperti di bawah ini
     ```java
@@ -311,13 +311,13 @@ Ikuti langkah-langkah praktikum berikut ini.
         <figure style="text-align: left">
                         <img src="images/12-04.png" alt="RGB"/>
                     </figure>
-            
+
 7.	Lakukan perulangan soal 4 menggunakan `while` atau `do-while`!
 8. Ganti kode untuk menampilkan array menjadi `foreach`!
 9. Tambahkan kode untuk memasukan jumlah baris dan kolom secara dinamis, dimasukan melalui keyboard!
 
 ### Praktikum 4
-Pada praktikum ini, kita akan membuat program array dua dimensi dengan kapasitas elemen baris dan kolom menggunakan 
+Pada praktikum ini, kita akan membuat program array dua dimensi dengan kapasitas elemen baris dan kolom menggunakan
 inputan keyboard.
 1. Buat file baru beri nama `Arr4.java`, jangan lupa untuk memembuat `method main`.
 2. Deklarasikan array seperti di bawah ini
@@ -346,7 +346,7 @@ inputan keyboard.
    }
     ```
    Jalankan kode tersebut, sehingga akan menampilkan semua elemen array.
-   
+
 #### Pertanyaan
 1. Pada langkah ke-1, ganti kode menjadi seperti di bawah ini
     ```java
@@ -390,9 +390,9 @@ inputan keyboard.
    Jalankan hasil perubahan, bagaimana hasilnya?
 4. Dari perubahan-perubahan tersebut untuk menampilkan array 3D, apakah yang dapat Anda simpulkan!
 
-## Tugas    
-1. Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi 
-`char KODE[10]`, berisi kode plat mobil. Array kedua, array dua dimensi `char KOTA[10][12]` berisi nama kota yang 
+## Tugas
+1. Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi
+`char KODE[10]`, berisi kode plat mobil. Array kedua, array dua dimensi `char KOTA[10][12]` berisi nama kota yang
 berpasangan dengan kode plat mobil. Ilustrasi tampilan array tersebut adalah sebagai berikut :
 
     <figure style="text-align: left">
@@ -403,13 +403,15 @@ berpasangan dengan kode plat mobil. Ilustrasi tampilan array tersebut adalah seb
     <figure style="text-align: left">
                     <img src="images/12-09.png" alt="RGB"/>
                 </figure>
-                
+
     Ketentuan dari program di atas adalah
     - Ukuran matriks ditentukan melalui keyboard
     - Ada pengecekan ketika matriks A dan matriks B memiliki perbedaan ukuran
     - Untuk menghitung nilai maksimal baris pada array, ukuran ditentukan melalui keyboard
 
 3. Dengan menggunakan matriks 3 dimensi, selesaikan kasus seperti berikut ini
+    - Sebuah jurusan teknologi informasi pada politeknik terkenal di Malang, memiliki 5 kelas program studi D4 TI.
+    Masing-masing kelas memiliki jumlah mahasiswa yang berbeda-beda.
     - Sebuah jurusan teknologi informasi pada politeknik terkenal di Malang, memiliki 5 kelas program studi D4 TI. 
     Masing-masing kelas memiliki jumlah mahasiswa yang dapat ditentukan di awal 
     - Seorang dosen matakuliah `Dasar Pemrograman` berkeinginan untuk menghitung nilai rata-rata setiap mahasiswa
