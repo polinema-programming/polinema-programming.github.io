@@ -411,7 +411,7 @@ berpasangan dengan kode plat mobil. Ilustrasi tampilan array tersebut adalah seb
 
 3. Dengan menggunakan matriks 3 dimensi, selesaikan kasus seperti berikut ini
     - Sebuah jurusan teknologi informasi pada politeknik terkenal di Malang, memiliki 5 kelas program studi D4 TI. 
-    Masing-masing kelas memiliki jumlah mahasiswa yang berbeda-beda. 
+    Masing-masing kelas memiliki jumlah mahasiswa yang dapat ditentukan di awal 
     - Seorang dosen matakuliah `Dasar Pemrograman` berkeinginan untuk menghitung nilai rata-rata setiap mahasiswa
     - nilai rata-rata didapatkan dari perhitungan nilai UTS, UAS, dan project.
     - Buatlah programnya untuk kebutuhan tersebut!
