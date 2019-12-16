@@ -8,7 +8,7 @@
 - [4. Kuis 1](04/jobsheet.md)
 - [5. Sintaks Pemilihan 1](05/jobsheet.md)
 - [6. Sintaks Pemilihan 2](06/jobsheet.md)
-- [7. Mini Project]()
+- [7. Mini Project](07/jobsheet.md)
 - [8. UTS]()
 - [9. Sintaks Perulangan 1](09/jobsheet.md)
 - [10. Sintaks Perulangan 2](10/jobsheet.md)
@@ -17,3 +17,4 @@
 - [13. Kuis 2](13/jobsheet.md)
 - [14. Fungsi 1](14/jobsheet.md)
 - [15. Fungsi 2](15/jobsheet.md)
+- [16. Proyek Akhir](16/jobsheet.md)
