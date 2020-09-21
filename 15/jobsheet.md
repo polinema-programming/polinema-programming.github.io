@@ -325,17 +325,17 @@ dengan menggunakan fungsi rekursif.
         Misal:  cari FPB dari bilangan 45 dan 20.
         m = 45, n = 20 -> sisa = m % n = 45 % 20 = 5
         m = 20, n = 5  -> sisa = m % n = 20 % 5  = 0
-    
+
         Karena sisa sudah bernilai 0, maka bilangan FPB = n = 5
-    
+
         Cari FPB dari bilangan 24 dan 30
         m = 24, n = 30 -> sisa = m % n = 24 % 30 = 24
         m = 30, n = 24 -> sisa = m % n = 30 % 24 = 6
         m = 24, n = 6  -> sisa = m % n = 24 % 6  = 0
-    
+
         Karena sisa sudah bernilai 0, maka bilangan FPB = n = 6
         ```
-    
+
 5. (Fibonacci). Sepasang kelinci yang baru lahir (jantan dan betina)
     ditempatkan pada suatu pembiakan.  Setelah dua bulan pasangan kelinci
     tersebut melahirkan sepasang kelinci kembar (jantan dan betina). Setiap
@@ -344,21 +344,21 @@ dengan menggunakan fungsi rekursif.
     Buatlah programnya menggunakan fungsi rekursif!
 
    Berikut ini adalah ilustrasinya dalam bentuk tabel.
-   
 
-    | Bulan ke - | Produktif | Belum Produktif | Total Pasangan |
-    | ---        | ---       | ---             | ---            |
-    | 1          | 0         | 1               | 1              |
-    | 2          | 0         | 1               | 1              |
-    | 3          | 1         | 1               | 2              |
-    | 4          | 1         | 2               | 3              |
-    | 5          | 2         | 3               | 5              |
-    | 6          | 3         | 5               | 8              |
-    | 7          | 5         | 8               | 13             |
-    | 8          | 8         | 13              | 21             |
-    | 9          | 13        | 21              | 34             |
-    | 10         | 21        | 34              | 55             |
-    | 11         | 34        | 55              | 89             |
-    | 12         | 55        | 89              | 144            |
+| Bulan ke - | Produktif | Belum Produktif | Total Pasangan |
+| ---        | ---       | ---             | ---            |
+| 1          | 0         | 1               | 1              |
+| 2          | 0         | 1               | 1              |
+| 3          | 1         | 1               | 2              |
+| 4          | 1         | 2               | 3              |
+| 5          | 2         | 3               | 5              |
+| 6          | 3         | 5               | 8              |
+| 7          | 5         | 8               | 13             |
+| 8          | 8         | 13              | 21             |
+| 9          | 13        | 21              | 34             |
+| 10         | 21        | 34              | 55             |
+| 11         | 34        | 55              | 89             |
+| 12         | 55        | 89              | 144            |
+
 
 
