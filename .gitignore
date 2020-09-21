@@ -1,0 +1,10 @@
+.idea/
+_book/
+node_modules/
+
+.DS_Store
+.nvimlog
+package-lock.json
+
+# Ignore  output pdf files
+*.pdf
