@@ -2,16 +2,17 @@
 
 ### Kompetensi
 
-1. Mahasiswa memahami sintaks dasar bahasa pemrograman Java.
-2. Mahasiswa mampu mengimplementasikan tipe data, variabel, Input-Output ke
-   dalam program bahasa Java.
-3. Mahasiswa memahami konsep alur kontrol sequence pada program.
-4. Mahasiswa mampu menggunakan operator dalam bahasa Java
+1.	Mahasiswa dapat memahami dan mampu menjelaskan tentang Tipe Data ke pemrograman Java
+2.	Mahasiswa dapat memahami dan mampu menjelaskan tentang Variabel pada pemrograman Java
+3.	Mahasiswa dapat menerangkan dan mampu menjelaskan tentang Input-output ke pemrograman Java
+4.	Mahasiswa dapat mengemukakan dan mampu menjelaskan tentang Sequence ke pemrograman Java
+5.	Mahasiswa dapat memahami dan mampu menguraikan tentang Operator ke pemrograman Java
+
 
 ### Alat dan Bahan
 
 1. PC/Laptop
-2. Text Editor (Sublime Text, Notepad++, vscode, dan lainnya)
+2. Text Editor (IntelliJ, Netbeans, vscode, Notepad++, dan lainnya)
 3. JDK
 
 ### Ulasan Teori
@@ -258,7 +259,7 @@ dapat dilihat pada tabel berikut ini:
 | ---             | ---                |
 | \n              | baris baru         |
 | \\              | Karakter backslash |
-| %%              | Karkter %          |
+| %%              | Karakter %          |
 | \t              | Karakter tab       |
 | \"              | Karakter "         |
 
@@ -508,6 +509,26 @@ c = a >>> 2;
 System.out.println(a >>> 2); //hasilnya 15
 ```
 
+#### Flowchart
+Flowchart merupakan sebuah bagan dengan symbol-symbol tertentu yang digunakan untuk menjelaskan urutan proses dan 
+hubungan antar proses lainnya pada sebuah program.
+
+##### Simbol-simbol flowchart
+<figure style="text-align: center">
+          <img src="images/flowchart.png" alt="Tugas 2"/>
+      </figure>
+      <figure style="text-align: center">
+                <img src="images/flowchart2.png" alt="Tugas 2"/>
+                <figcaption style="text-align: center; font-weight: bold">Simbol-simbol flowchart</figcaption>
+            </figure>
+
+##### Contoh flowchart
+Flowchart untuk menghitung luas dan keliling bangun datar, persegi panjang.
+<figure style="text-align: center">
+          <img src="images/pp.svg" alt="Tugas 2"/>
+          <figcaption style="text-align: center; font-weight: bold">Contoh flowchart</figcaption>
+      </figure>
+
 ### Langkah Praktikum
 Ikuti langkah-langkah praktikum berikut ini.
 
@@ -622,14 +643,18 @@ Kerjakan tugas sesuai dengan instruksi berikut ini.
   ```
   Saya mahasiswa Polinema kelas 1Z.
   Saya sedang belajar menampilkan nilai:
-      Bilangan bulat 10
-      Bilangan pecahan 3.33
-      Karakter C
+  Bilangan bulat 10
+  Bilangan pecahan 3.33
+  Karakter C
   ```
 
 - Buatlah tampilan yang menghasilkan output di bawah ini
 
-    `Saya ❤ bapak dan ibu setulus hati`
+  ```
+  Simbol © untuk copyright
+  Simbol ™ untuk trademark
+  Simbol ® untuk register
+  ```
 
 - Perhatikan baik-baik diagram flowchart program menghitung volume tabung
    berikut ini:
